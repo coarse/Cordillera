@@ -1,0 +1,4 @@
+*.sch-bak
+*.kicad_pcb-bak
+*.dwl
+*.dwl2

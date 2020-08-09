@@ -1,0 +1,8 @@
+(sym_lib_table
+  (lib (name keeb_chips)(type Legacy)(uri ${GIT_KB_LIBRARY}/kicad-keeb-lib/keeb_chips.lib)(options "")(descr ""))
+  (lib (name keeb_connectors)(type Legacy)(uri ${GIT_KB_LIBRARY}/kicad-keeb-lib/keeb_connectors.lib)(options "")(descr ""))
+  (lib (name keeb_lighting)(type Legacy)(uri ${GIT_KB_LIBRARY}/kicad-keeb-lib/keeb_lighting.lib)(options "")(descr ""))
+  (lib (name keeb_mcu)(type Legacy)(uri ${GIT_KB_LIBRARY}/kicad-keeb-lib/keeb_mcu.lib)(options "")(descr ""))
+  (lib (name keeb_parts)(type Legacy)(uri ${GIT_KB_LIBRARY}/kicad-keeb-lib/keeb_parts.lib)(options "")(descr ""))
+  (lib (name keeb_power)(type Legacy)(uri ${GIT_KB_LIBRARY}/kicad-keeb-lib/keeb_power.lib)(options "")(descr ""))
+)

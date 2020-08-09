@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name keeb_connectors)(type KiCad)(uri ${GIT_KB_LIBRARY}/kicad-keeb-lib/keeb_connectors.pretty)(options "")(descr ""))
+  (lib (name keeb_mcu)(type KiCad)(uri ${GIT_KB_LIBRARY}/kicad-keeb-lib/keeb_mcu.pretty)(options "")(descr ""))
+  (lib (name keeb_parts)(type KiCad)(uri ${GIT_KB_LIBRARY}/kicad-keeb-lib/keeb_parts.pretty)(options "")(descr ""))
+  (lib (name MX_Only)(type KiCad)(uri ${GIT_KB_LIBRARY}/kicad-keeb-lib/MX_Alps_Hybrid.pretty/MX_Only.pretty)(options "")(descr ""))
+)
