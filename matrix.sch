@@ -1936,17 +1936,6 @@ F 3 "" H 900 1355 50  0001 C CNN
 	2    900  1350
 	-1   0    0    1   
 $EndComp
-$Comp
-L keeb_parts:R_Small R9
-U 1 1 5FEA27E0
-P 1200 1550
-F 0 "R9" H 1259 1596 50  0000 L CNN
-F 1 "470" H 1259 1505 50  0000 L CNN
-F 2 "keeb_parts:R_0603_1608Metric" H 1200 1550 50  0001 C CNN
-F 3 "~" H 1200 1550 50  0001 C CNN
-	1    1200 1550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1200 1450 1200 1350
 Wire Wire Line
@@ -1963,17 +1952,6 @@ F 2 "MX_Only:MXOnly-1U" H 900 2105 50  0001 C CNN
 F 3 "" H 900 2105 50  0001 C CNN
 	2    900  2100
 	-1   0    0    1   
-$EndComp
-$Comp
-L keeb_parts:R_Small R10
-U 1 1 5FEE757F
-P 1200 2300
-F 0 "R10" H 1259 2346 50  0000 L CNN
-F 1 "470" H 1259 2255 50  0000 L CNN
-F 2 "keeb_parts:R_0603_1608Metric" H 1200 2300 50  0001 C CNN
-F 3 "~" H 1200 2300 50  0001 C CNN
-	1    1200 2300
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1200 2200 1200 2100
@@ -1992,17 +1970,6 @@ F 3 "" H 900 2855 50  0001 C CNN
 	2    900  2850
 	-1   0    0    1   
 $EndComp
-$Comp
-L keeb_parts:R_Small R11
-U 1 1 5FF095E7
-P 1200 3050
-F 0 "R11" H 1259 3096 50  0000 L CNN
-F 1 "470" H 1259 3005 50  0000 L CNN
-F 2 "keeb_parts:R_0603_1608Metric" H 1200 3050 50  0001 C CNN
-F 3 "~" H 1200 3050 50  0001 C CNN
-	1    1200 3050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1200 2950 1200 2850
 Wire Wire Line
@@ -2019,17 +1986,6 @@ F 2 "MX_Only:MXOnly-1U" H 1700 1355 50  0001 C CNN
 F 3 "" H 1700 1355 50  0001 C CNN
 	2    1700 1350
 	-1   0    0    1   
-$EndComp
-$Comp
-L keeb_parts:R_Small R12
-U 1 1 5FF7995F
-P 2000 1550
-F 0 "R12" H 2059 1596 50  0000 L CNN
-F 1 "470" H 2059 1505 50  0000 L CNN
-F 2 "keeb_parts:R_0603_1608Metric" H 2000 1550 50  0001 C CNN
-F 3 "~" H 2000 1550 50  0001 C CNN
-	1    2000 1550
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2000 1450 2000 1350
@@ -2048,17 +2004,6 @@ F 3 "" H 1700 2105 50  0001 C CNN
 	2    1700 2100
 	-1   0    0    1   
 $EndComp
-$Comp
-L keeb_parts:R_Small R13
-U 1 1 5FF7996E
-P 2000 2300
-F 0 "R13" H 2059 2346 50  0000 L CNN
-F 1 "470" H 2059 2255 50  0000 L CNN
-F 2 "keeb_parts:R_0603_1608Metric" H 2000 2300 50  0001 C CNN
-F 3 "~" H 2000 2300 50  0001 C CNN
-	1    2000 2300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2000 2200 2000 2100
 Wire Wire Line
@@ -2075,17 +2020,6 @@ F 2 "MX_Only:MXOnly-1.75U" H 1700 2855 50  0001 C CNN
 F 3 "" H 1700 2855 50  0001 C CNN
 	2    1700 2850
 	-1   0    0    1   
-$EndComp
-$Comp
-L keeb_parts:R_Small R14
-U 1 1 5FF7997D
-P 2000 3050
-F 0 "R14" H 2059 3096 50  0000 L CNN
-F 1 "470" H 2059 3005 50  0000 L CNN
-F 2 "keeb_parts:R_0603_1608Metric" H 2000 3050 50  0001 C CNN
-F 3 "~" H 2000 3050 50  0001 C CNN
-	1    2000 3050
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2000 2950 2000 2850
@@ -2104,17 +2038,6 @@ F 3 "" H 1700 3605 50  0001 C CNN
 	2    1700 3600
 	-1   0    0    1   
 $EndComp
-$Comp
-L keeb_parts:R_Small R15
-U 1 1 5FF7998C
-P 2000 3800
-F 0 "R15" H 2059 3846 50  0000 L CNN
-F 1 "470" H 2059 3755 50  0000 L CNN
-F 2 "keeb_parts:R_0603_1608Metric" H 2000 3800 50  0001 C CNN
-F 3 "~" H 2000 3800 50  0001 C CNN
-	1    2000 3800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2000 3700 2000 3600
 Wire Wire Line
@@ -2131,17 +2054,6 @@ F 2 "MX_Only:MXOnly-1.5U" H 1700 4355 50  0001 C CNN
 F 3 "" H 1700 4355 50  0001 C CNN
 	2    1700 4350
 	-1   0    0    1   
-$EndComp
-$Comp
-L keeb_parts:R_Small R16
-U 1 1 5FF7999B
-P 2000 4550
-F 0 "R16" H 2059 4596 50  0000 L CNN
-F 1 "470" H 2059 4505 50  0000 L CNN
-F 2 "keeb_parts:R_0603_1608Metric" H 2000 4550 50  0001 C CNN
-F 3 "~" H 2000 4550 50  0001 C CNN
-	1    2000 4550
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2000 4450 2000 4350
@@ -2160,17 +2072,6 @@ F 3 "" H 2500 1355 50  0001 C CNN
 	2    2500 1350
 	-1   0    0    1   
 $EndComp
-$Comp
-L keeb_parts:R_Small R17
-U 1 1 5FFBC492
-P 2800 1550
-F 0 "R17" H 2859 1596 50  0000 L CNN
-F 1 "470" H 2859 1505 50  0000 L CNN
-F 2 "keeb_parts:R_0603_1608Metric" H 2800 1550 50  0001 C CNN
-F 3 "~" H 2800 1550 50  0001 C CNN
-	1    2800 1550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2800 1450 2800 1350
 Wire Wire Line
@@ -2187,17 +2088,6 @@ F 2 "MX_Only:MXOnly-1U" H 2500 2105 50  0001 C CNN
 F 3 "" H 2500 2105 50  0001 C CNN
 	2    2500 2100
 	-1   0    0    1   
-$EndComp
-$Comp
-L keeb_parts:R_Small R18
-U 1 1 5FFBC4A1
-P 2800 2300
-F 0 "R18" H 2859 2346 50  0000 L CNN
-F 1 "470" H 2859 2255 50  0000 L CNN
-F 2 "keeb_parts:R_0603_1608Metric" H 2800 2300 50  0001 C CNN
-F 3 "~" H 2800 2300 50  0001 C CNN
-	1    2800 2300
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2800 2200 2800 2100
@@ -2216,17 +2106,6 @@ F 3 "" H 2500 2855 50  0001 C CNN
 	2    2500 2850
 	-1   0    0    1   
 $EndComp
-$Comp
-L keeb_parts:R_Small R19
-U 1 1 5FFBC4B0
-P 2800 3050
-F 0 "R19" H 2859 3096 50  0000 L CNN
-F 1 "470" H 2859 3005 50  0000 L CNN
-F 2 "keeb_parts:R_0603_1608Metric" H 2800 3050 50  0001 C CNN
-F 3 "~" H 2800 3050 50  0001 C CNN
-	1    2800 3050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2800 2950 2800 2850
 Wire Wire Line
@@ -2243,17 +2122,6 @@ F 2 "MX_Only:MXOnly-1U" H 2500 3605 50  0001 C CNN
 F 3 "" H 2500 3605 50  0001 C CNN
 	2    2500 3600
 	-1   0    0    1   
-$EndComp
-$Comp
-L keeb_parts:R_Small R20
-U 1 1 5FFBC4BF
-P 2800 3800
-F 0 "R20" H 2859 3846 50  0000 L CNN
-F 1 "470" H 2859 3755 50  0000 L CNN
-F 2 "keeb_parts:R_0603_1608Metric" H 2800 3800 50  0001 C CNN
-F 3 "~" H 2800 3800 50  0001 C CNN
-	1    2800 3800
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2800 3700 2800 3600
@@ -2281,7 +2149,7 @@ F 1 "470" H 3659 1505 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 3600 1550 50  0001 C CNN
 F 3 "~" H 3600 1550 50  0001 C CNN
 	1    3600 1550
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	3600 1450 3600 1350
@@ -2299,17 +2167,6 @@ F 2 "MX_Only:MXOnly-1U" H 3300 2105 50  0001 C CNN
 F 3 "" H 3300 2105 50  0001 C CNN
 	2    3300 2100
 	-1   0    0    1   
-$EndComp
-$Comp
-L keeb_parts:R_Small R22
-U 1 1 5FFBC4EC
-P 3600 2300
-F 0 "R22" H 3659 2346 50  0000 L CNN
-F 1 "470" H 3659 2255 50  0000 L CNN
-F 2 "keeb_parts:R_0603_1608Metric" H 3600 2300 50  0001 C CNN
-F 3 "~" H 3600 2300 50  0001 C CNN
-	1    3600 2300
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3600 2200 3600 2100
@@ -2337,7 +2194,7 @@ F 1 "470" H 3659 3005 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 3600 3050 50  0001 C CNN
 F 3 "~" H 3600 3050 50  0001 C CNN
 	1    3600 3050
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	3600 2950 3600 2850
@@ -2365,7 +2222,7 @@ F 1 "470" H 3659 3755 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 3600 3800 50  0001 C CNN
 F 3 "~" H 3600 3800 50  0001 C CNN
 	1    3600 3800
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	3600 3700 3600 3600
@@ -2383,17 +2240,6 @@ F 2 "MX_Only:MXOnly-1.5U" H 3300 4355 50  0001 C CNN
 F 3 "" H 3300 4355 50  0001 C CNN
 	2    3300 4350
 	-1   0    0    1   
-$EndComp
-$Comp
-L keeb_parts:R_Small R25
-U 1 1 5FFBC519
-P 3600 4550
-F 0 "R25" H 3659 4596 50  0000 L CNN
-F 1 "470" H 3659 4505 50  0000 L CNN
-F 2 "keeb_parts:R_0603_1608Metric" H 3600 4550 50  0001 C CNN
-F 3 "~" H 3600 4550 50  0001 C CNN
-	1    3600 4550
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3600 4450 3600 4350
@@ -2421,7 +2267,7 @@ F 1 "470" H 4459 1505 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 4400 1550 50  0001 C CNN
 F 3 "~" H 4400 1550 50  0001 C CNN
 	1    4400 1550
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	4400 1450 4400 1350
@@ -2449,7 +2295,7 @@ F 1 "470" H 4459 2255 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 4400 2300 50  0001 C CNN
 F 3 "~" H 4400 2300 50  0001 C CNN
 	1    4400 2300
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	4400 2200 4400 2100
@@ -2477,7 +2323,7 @@ F 1 "470" H 4459 3005 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 4400 3050 50  0001 C CNN
 F 3 "~" H 4400 3050 50  0001 C CNN
 	1    4400 3050
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	4400 2950 4400 2850
@@ -2505,7 +2351,7 @@ F 1 "470" H 4459 3755 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 4400 3800 50  0001 C CNN
 F 3 "~" H 4400 3800 50  0001 C CNN
 	1    4400 3800
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	4400 3700 4400 3600
@@ -2533,7 +2379,7 @@ F 1 "470" H 5259 1505 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 5200 1550 50  0001 C CNN
 F 3 "~" H 5200 1550 50  0001 C CNN
 	1    5200 1550
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	5200 1450 5200 1350
@@ -2561,7 +2407,7 @@ F 1 "470" H 5259 2255 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 5200 2300 50  0001 C CNN
 F 3 "~" H 5200 2300 50  0001 C CNN
 	1    5200 2300
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	5200 2200 5200 2100
@@ -2589,7 +2435,7 @@ F 1 "470" H 5259 3005 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 5200 3050 50  0001 C CNN
 F 3 "~" H 5200 3050 50  0001 C CNN
 	1    5200 3050
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	5200 2950 5200 2850
@@ -2617,7 +2463,7 @@ F 1 "470" H 5259 3755 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 5200 3800 50  0001 C CNN
 F 3 "~" H 5200 3800 50  0001 C CNN
 	1    5200 3800
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	5200 3700 5200 3600
@@ -2645,7 +2491,7 @@ F 1 "470" H 5259 4505 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 5200 4550 50  0001 C CNN
 F 3 "~" H 5200 4550 50  0001 C CNN
 	1    5200 4550
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	5200 4450 5200 4350
@@ -2673,7 +2519,7 @@ F 1 "470" H 6059 1505 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 6000 1550 50  0001 C CNN
 F 3 "~" H 6000 1550 50  0001 C CNN
 	1    6000 1550
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	6000 1450 6000 1350
@@ -2701,7 +2547,7 @@ F 1 "470" H 6059 2255 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 6000 2300 50  0001 C CNN
 F 3 "~" H 6000 2300 50  0001 C CNN
 	1    6000 2300
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	6000 2200 6000 2100
@@ -2729,7 +2575,7 @@ F 1 "470" H 6059 3005 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 6000 3050 50  0001 C CNN
 F 3 "~" H 6000 3050 50  0001 C CNN
 	1    6000 3050
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	6000 2950 6000 2850
@@ -2757,7 +2603,7 @@ F 1 "470" H 6059 3755 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 6000 3800 50  0001 C CNN
 F 3 "~" H 6000 3800 50  0001 C CNN
 	1    6000 3800
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	6000 3700 6000 3600
@@ -2785,7 +2631,7 @@ F 1 "470" H 6059 4505 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 6000 4550 50  0001 C CNN
 F 3 "~" H 6000 4550 50  0001 C CNN
 	1    6000 4550
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	6000 4450 6000 4350
@@ -2813,7 +2659,7 @@ F 1 "470" H 6859 1505 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 6800 1550 50  0001 C CNN
 F 3 "~" H 6800 1550 50  0001 C CNN
 	1    6800 1550
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	6800 1450 6800 1350
@@ -2841,7 +2687,7 @@ F 1 "470" H 7659 1505 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 7600 1550 50  0001 C CNN
 F 3 "~" H 7600 1550 50  0001 C CNN
 	1    7600 1550
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	7600 1450 7600 1350
@@ -2869,7 +2715,7 @@ F 1 "470" H 7659 2255 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 7600 2300 50  0001 C CNN
 F 3 "~" H 7600 2300 50  0001 C CNN
 	1    7600 2300
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	7600 2200 7600 2100
@@ -2897,7 +2743,7 @@ F 1 "470" H 7659 3005 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 7600 3050 50  0001 C CNN
 F 3 "~" H 7600 3050 50  0001 C CNN
 	1    7600 3050
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	7600 2950 7600 2850
@@ -2925,7 +2771,7 @@ F 1 "470" H 7659 3755 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 7600 3800 50  0001 C CNN
 F 3 "~" H 7600 3800 50  0001 C CNN
 	1    7600 3800
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	7600 3700 7600 3600
@@ -2953,7 +2799,7 @@ F 1 "470" H 8459 1505 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 8400 1550 50  0001 C CNN
 F 3 "~" H 8400 1550 50  0001 C CNN
 	1    8400 1550
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	8400 1450 8400 1350
@@ -2981,7 +2827,7 @@ F 1 "470" H 8459 2255 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 8400 2300 50  0001 C CNN
 F 3 "~" H 8400 2300 50  0001 C CNN
 	1    8400 2300
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	8400 2200 8400 2100
@@ -3009,7 +2855,7 @@ F 1 "470" H 8459 3005 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 8400 3050 50  0001 C CNN
 F 3 "~" H 8400 3050 50  0001 C CNN
 	1    8400 3050
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	8400 2950 8400 2850
@@ -3037,7 +2883,7 @@ F 1 "470" H 8459 3755 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 8400 3800 50  0001 C CNN
 F 3 "~" H 8400 3800 50  0001 C CNN
 	1    8400 3800
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	8400 3700 8400 3600
@@ -3065,7 +2911,7 @@ F 1 "470" H 9259 1505 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 9200 1550 50  0001 C CNN
 F 3 "~" H 9200 1550 50  0001 C CNN
 	1    9200 1550
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	9200 1450 9200 1350
@@ -3093,7 +2939,7 @@ F 1 "470" H 9259 2255 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 9200 2300 50  0001 C CNN
 F 3 "~" H 9200 2300 50  0001 C CNN
 	1    9200 2300
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	9200 2200 9200 2100
@@ -3121,7 +2967,7 @@ F 1 "470" H 9259 3005 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 9200 3050 50  0001 C CNN
 F 3 "~" H 9200 3050 50  0001 C CNN
 	1    9200 3050
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	9200 2950 9200 2850
@@ -3149,7 +2995,7 @@ F 1 "470" H 9259 3755 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 9200 3800 50  0001 C CNN
 F 3 "~" H 9200 3800 50  0001 C CNN
 	1    9200 3800
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	9200 3700 9200 3600
@@ -3177,7 +3023,7 @@ F 1 "470" H 10059 1505 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 10000 1550 50  0001 C CNN
 F 3 "~" H 10000 1550 50  0001 C CNN
 	1    10000 1550
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	10000 1450 10000 1350
@@ -3205,7 +3051,7 @@ F 1 "470" H 10059 2255 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 10000 2300 50  0001 C CNN
 F 3 "~" H 10000 2300 50  0001 C CNN
 	1    10000 2300
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	10000 2200 10000 2100
@@ -3233,7 +3079,7 @@ F 1 "470" H 10059 3005 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 10000 3050 50  0001 C CNN
 F 3 "~" H 10000 3050 50  0001 C CNN
 	1    10000 3050
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	10000 2950 10000 2850
@@ -3261,7 +3107,7 @@ F 1 "470" H 10059 3755 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 10000 3800 50  0001 C CNN
 F 3 "~" H 10000 3800 50  0001 C CNN
 	1    10000 3800
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	10000 3700 10000 3600
@@ -3289,7 +3135,7 @@ F 1 "470" H 10859 1505 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 10800 1550 50  0001 C CNN
 F 3 "~" H 10800 1550 50  0001 C CNN
 	1    10800 1550
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	10800 1450 10800 1350
@@ -3317,7 +3163,7 @@ F 1 "470" H 10859 2255 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 10800 2300 50  0001 C CNN
 F 3 "~" H 10800 2300 50  0001 C CNN
 	1    10800 2300
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	10800 2200 10800 2100
@@ -3345,7 +3191,7 @@ F 1 "470" H 10859 3005 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 10800 3050 50  0001 C CNN
 F 3 "~" H 10800 3050 50  0001 C CNN
 	1    10800 3050
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	10800 2950 10800 2850
@@ -3373,7 +3219,7 @@ F 1 "470" H 10859 3755 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 10800 3800 50  0001 C CNN
 F 3 "~" H 10800 3800 50  0001 C CNN
 	1    10800 3800
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	10800 3700 10800 3600
@@ -3401,7 +3247,7 @@ F 1 "470" H 11659 1505 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 11600 1550 50  0001 C CNN
 F 3 "~" H 11600 1550 50  0001 C CNN
 	1    11600 1550
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	11600 1450 11600 1350
@@ -3429,7 +3275,7 @@ F 1 "470" H 11659 2255 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 11600 2300 50  0001 C CNN
 F 3 "~" H 11600 2300 50  0001 C CNN
 	1    11600 2300
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	11600 2200 11600 2100
@@ -3457,7 +3303,7 @@ F 1 "470" H 11659 3005 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 11600 3050 50  0001 C CNN
 F 3 "~" H 11600 3050 50  0001 C CNN
 	1    11600 3050
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	11600 2950 11600 2850
@@ -3485,7 +3331,7 @@ F 1 "470" H 11659 3755 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 11600 3800 50  0001 C CNN
 F 3 "~" H 11600 3800 50  0001 C CNN
 	1    11600 3800
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	11600 3700 11600 3600
@@ -3513,7 +3359,7 @@ F 1 "470" H 12459 1505 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 12400 1550 50  0001 C CNN
 F 3 "~" H 12400 1550 50  0001 C CNN
 	1    12400 1550
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	12400 1450 12400 1350
@@ -3541,7 +3387,7 @@ F 1 "470" H 12459 2255 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 12400 2300 50  0001 C CNN
 F 3 "~" H 12400 2300 50  0001 C CNN
 	1    12400 2300
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	12400 2200 12400 2100
@@ -3569,7 +3415,7 @@ F 1 "470" H 12459 3755 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 12400 3800 50  0001 C CNN
 F 3 "~" H 12400 3800 50  0001 C CNN
 	1    12400 3800
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	12400 3700 12400 3600
@@ -3597,7 +3443,7 @@ F 1 "470" H 13259 1505 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 13200 1550 50  0001 C CNN
 F 3 "~" H 13200 1550 50  0001 C CNN
 	1    13200 1550
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	13200 1450 13200 1350
@@ -3625,7 +3471,7 @@ F 1 "470" H 13259 2255 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 13200 2300 50  0001 C CNN
 F 3 "~" H 13200 2300 50  0001 C CNN
 	1    13200 2300
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	13200 2200 13200 2100
@@ -3653,7 +3499,7 @@ F 1 "470" H 13259 3005 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 13200 3050 50  0001 C CNN
 F 3 "~" H 13200 3050 50  0001 C CNN
 	1    13200 3050
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	13200 2950 13200 2850
@@ -3681,7 +3527,7 @@ F 1 "470" H 13259 3755 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 13200 3800 50  0001 C CNN
 F 3 "~" H 13200 3800 50  0001 C CNN
 	1    13200 3800
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	13200 3700 13200 3600
@@ -3709,7 +3555,7 @@ F 1 "470" H 13259 4505 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 13200 4550 50  0001 C CNN
 F 3 "~" H 13200 4550 50  0001 C CNN
 	1    13200 4550
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	13200 4450 13200 4350
@@ -3889,7 +3735,7 @@ F 1 "470" H 10059 4505 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 10000 4550 50  0001 C CNN
 F 3 "~" H 10000 4550 50  0001 C CNN
 	1    10000 4550
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L keeb_parts:Keyboard_Switch KBL5
@@ -3918,7 +3764,7 @@ F 1 "470" H 8459 4505 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 8400 4550 50  0001 C CNN
 F 3 "~" H 8400 4550 50  0001 C CNN
 	1    8400 4550
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L keeb_parts:Keyboard_Switch KBJ5
@@ -4406,4 +4252,158 @@ Wire Wire Line
 Connection ~ 12400 3600
 Wire Wire Line
 	12700 2850 12700 3600
+$Comp
+L keeb_parts:R_Small R25
+U 1 1 5FFBC519
+P 3600 4550
+F 0 "R25" H 3659 4596 50  0000 L CNN
+F 1 "470" H 3659 4505 50  0000 L CNN
+F 2 "keeb_parts:R_0603_1608Metric" H 3600 4550 50  0001 C CNN
+F 3 "~" H 3600 4550 50  0001 C CNN
+	1    3600 4550
+	1    0    0    1   
+$EndComp
+$Comp
+L keeb_parts:R_Small R16
+U 1 1 5FF7999B
+P 2000 4550
+F 0 "R16" H 2059 4596 50  0000 L CNN
+F 1 "470" H 2059 4505 50  0000 L CNN
+F 2 "keeb_parts:R_0603_1608Metric" H 2000 4550 50  0001 C CNN
+F 3 "~" H 2000 4550 50  0001 C CNN
+	1    2000 4550
+	1    0    0    1   
+$EndComp
+$Comp
+L keeb_parts:R_Small R20
+U 1 1 5FFBC4BF
+P 2800 3800
+F 0 "R20" H 2859 3846 50  0000 L CNN
+F 1 "470" H 2859 3755 50  0000 L CNN
+F 2 "keeb_parts:R_0603_1608Metric" H 2800 3800 50  0001 C CNN
+F 3 "~" H 2800 3800 50  0001 C CNN
+	1    2800 3800
+	1    0    0    1   
+$EndComp
+$Comp
+L keeb_parts:R_Small R15
+U 1 1 5FF7998C
+P 2000 3800
+F 0 "R15" H 2059 3846 50  0000 L CNN
+F 1 "470" H 2059 3755 50  0000 L CNN
+F 2 "keeb_parts:R_0603_1608Metric" H 2000 3800 50  0001 C CNN
+F 3 "~" H 2000 3800 50  0001 C CNN
+	1    2000 3800
+	1    0    0    1   
+$EndComp
+$Comp
+L keeb_parts:R_Small R19
+U 1 1 5FFBC4B0
+P 2800 3050
+F 0 "R19" H 2859 3096 50  0000 L CNN
+F 1 "470" H 2859 3005 50  0000 L CNN
+F 2 "keeb_parts:R_0603_1608Metric" H 2800 3050 50  0001 C CNN
+F 3 "~" H 2800 3050 50  0001 C CNN
+	1    2800 3050
+	1    0    0    1   
+$EndComp
+$Comp
+L keeb_parts:R_Small R14
+U 1 1 5FF7997D
+P 2000 3050
+F 0 "R14" H 2059 3096 50  0000 L CNN
+F 1 "470" H 2059 3005 50  0000 L CNN
+F 2 "keeb_parts:R_0603_1608Metric" H 2000 3050 50  0001 C CNN
+F 3 "~" H 2000 3050 50  0001 C CNN
+	1    2000 3050
+	1    0    0    1   
+$EndComp
+$Comp
+L keeb_parts:R_Small R11
+U 1 1 5FF095E7
+P 1200 3050
+F 0 "R11" H 1259 3096 50  0000 L CNN
+F 1 "470" H 1259 3005 50  0000 L CNN
+F 2 "keeb_parts:R_0603_1608Metric" H 1200 3050 50  0001 C CNN
+F 3 "~" H 1200 3050 50  0001 C CNN
+	1    1200 3050
+	1    0    0    1   
+$EndComp
+$Comp
+L keeb_parts:R_Small R22
+U 1 1 5FFBC4EC
+P 3600 2300
+F 0 "R22" H 3659 2346 50  0000 L CNN
+F 1 "470" H 3659 2255 50  0000 L CNN
+F 2 "keeb_parts:R_0603_1608Metric" H 3600 2300 50  0001 C CNN
+F 3 "~" H 3600 2300 50  0001 C CNN
+	1    3600 2300
+	1    0    0    1   
+$EndComp
+$Comp
+L keeb_parts:R_Small R18
+U 1 1 5FFBC4A1
+P 2800 2300
+F 0 "R18" H 2859 2346 50  0000 L CNN
+F 1 "470" H 2859 2255 50  0000 L CNN
+F 2 "keeb_parts:R_0603_1608Metric" H 2800 2300 50  0001 C CNN
+F 3 "~" H 2800 2300 50  0001 C CNN
+	1    2800 2300
+	1    0    0    1   
+$EndComp
+$Comp
+L keeb_parts:R_Small R13
+U 1 1 5FF7996E
+P 2000 2300
+F 0 "R13" H 2059 2346 50  0000 L CNN
+F 1 "470" H 2059 2255 50  0000 L CNN
+F 2 "keeb_parts:R_0603_1608Metric" H 2000 2300 50  0001 C CNN
+F 3 "~" H 2000 2300 50  0001 C CNN
+	1    2000 2300
+	1    0    0    1   
+$EndComp
+$Comp
+L keeb_parts:R_Small R10
+U 1 1 5FEE757F
+P 1200 2300
+F 0 "R10" H 1259 2346 50  0000 L CNN
+F 1 "470" H 1259 2255 50  0000 L CNN
+F 2 "keeb_parts:R_0603_1608Metric" H 1200 2300 50  0001 C CNN
+F 3 "~" H 1200 2300 50  0001 C CNN
+	1    1200 2300
+	1    0    0    1   
+$EndComp
+$Comp
+L keeb_parts:R_Small R17
+U 1 1 5FFBC492
+P 2800 1550
+F 0 "R17" H 2859 1596 50  0000 L CNN
+F 1 "470" H 2859 1505 50  0000 L CNN
+F 2 "keeb_parts:R_0603_1608Metric" H 2800 1550 50  0001 C CNN
+F 3 "~" H 2800 1550 50  0001 C CNN
+	1    2800 1550
+	1    0    0    1   
+$EndComp
+$Comp
+L keeb_parts:R_Small R12
+U 1 1 5FF7995F
+P 2000 1550
+F 0 "R12" H 2059 1596 50  0000 L CNN
+F 1 "470" H 2059 1505 50  0000 L CNN
+F 2 "keeb_parts:R_0603_1608Metric" H 2000 1550 50  0001 C CNN
+F 3 "~" H 2000 1550 50  0001 C CNN
+	1    2000 1550
+	1    0    0    1   
+$EndComp
+$Comp
+L keeb_parts:R_Small R9
+U 1 1 5FEA27E0
+P 1200 1550
+F 0 "R9" H 1259 1596 50  0000 L CNN
+F 1 "470" H 1259 1505 50  0000 L CNN
+F 2 "keeb_parts:R_0603_1608Metric" H 1200 1550 50  0001 C CNN
+F 3 "~" H 1200 1550 50  0001 C CNN
+	1    1200 1550
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC
