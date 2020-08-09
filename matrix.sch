@@ -45,7 +45,7 @@ F 1 "Keyboard_Switch" H 2700 6500 50  0001 C CNN
 F 2 "MX_Only:MXOnly-1U" H 2700 6605 50  0001 C CNN
 F 3 "" H 2700 6605 50  0001 C CNN
 	1    2700 6600
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L keeb_parts:Keyboard_Switch KBD1
@@ -56,17 +56,6 @@ F 1 "Keyboard_Switch" H 3300 6500 50  0001 C CNN
 F 2 "MX_Only:MXOnly-1U" H 3300 6605 50  0001 C CNN
 F 3 "" H 3300 6605 50  0001 C CNN
 	1    3300 6600
-	1    0    0    -1  
-$EndComp
-$Comp
-L keeb_parts:Keyboard_Switch KBE1
-U 1 1 5F46D283
-P 3900 6600
-F 0 "KBE1" H 3900 6793 50  0000 C CNN
-F 1 "Keyboard_Switch" H 3900 6500 50  0001 C CNN
-F 2 "MX_Only:MXOnly-1U" H 3900 6605 50  0001 C CNN
-F 3 "" H 3900 6605 50  0001 C CNN
-	1    3900 6600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -89,7 +78,7 @@ F 1 "Keyboard_Switch" H 5100 6500 50  0001 C CNN
 F 2 "MX_Only:MXOnly-1U" H 5100 6605 50  0001 C CNN
 F 3 "" H 5100 6605 50  0001 C CNN
 	1    5100 6600
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L keeb_parts:Keyboard_Switch KBH1
@@ -122,7 +111,7 @@ F 1 "Keyboard_Switch" H 7200 6500 50  0001 C CNN
 F 2 "MX_Only:MXOnly-1U" H 7200 6605 50  0001 C CNN
 F 3 "" H 7200 6605 50  0001 C CNN
 	1    7200 6600
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L keeb_parts:Keyboard_Switch KBK1
@@ -144,7 +133,7 @@ F 1 "Keyboard_Switch" H 8400 6500 50  0001 C CNN
 F 2 "MX_Only:MXOnly-1U" H 8400 6605 50  0001 C CNN
 F 3 "" H 8400 6605 50  0001 C CNN
 	1    8400 6600
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L keeb_parts:Keyboard_Switch KBM1
@@ -166,7 +155,7 @@ F 1 "Keyboard_Switch" H 9600 6500 50  0001 C CNN
 F 2 "MX_Only:MXOnly-1U" H 9600 6605 50  0001 C CNN
 F 3 "" H 9600 6605 50  0001 C CNN
 	1    9600 6600
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L keeb_parts:Keyboard_Switch KBO1
@@ -188,18 +177,7 @@ F 1 "Keyboard_Switch" H 10800 6500 50  0001 C CNN
 F 2 "MX_Only:MXOnly-2U" H 10800 6605 50  0001 C CNN
 F 3 "" H 10800 6605 50  0001 C CNN
 	1    10800 6600
-	1    0    0    -1  
-$EndComp
-$Comp
-L keeb_chips:BAV70 D5
-U 1 1 5F4A6639
-P 2400 6900
-F 0 "D5" H 2400 7116 50  0000 C CNN
-F 1 "BAV70" H 2400 7025 50  0000 C CNN
-F 2 "keeb_parts:SOT-23" H 2400 6900 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 2400 6900 50  0001 C CNN
-	1    2400 6900
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	2300 6600 2300 6700
@@ -246,7 +224,7 @@ F 1 "Keyboard_Switch" H 2700 7450 50  0001 C CNN
 F 2 "MX_Only:MXOnly-1U" H 2700 7555 50  0001 C CNN
 F 3 "" H 2700 7555 50  0001 C CNN
 	1    2700 7550
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L keeb_parts:Keyboard_Switch KBD2
@@ -268,7 +246,7 @@ F 1 "Keyboard_Switch" H 3900 7450 50  0001 C CNN
 F 2 "MX_Only:MXOnly-1U" H 3900 7555 50  0001 C CNN
 F 3 "" H 3900 7555 50  0001 C CNN
 	1    3900 7550
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L keeb_parts:Keyboard_Switch KBF2
@@ -290,7 +268,7 @@ F 1 "Keyboard_Switch" H 5100 7450 50  0001 C CNN
 F 2 "MX_Only:MXOnly-1U" H 5100 7555 50  0001 C CNN
 F 3 "" H 5100 7555 50  0001 C CNN
 	1    5100 7550
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L keeb_parts:Keyboard_Switch KBI2
@@ -312,7 +290,7 @@ F 1 "Keyboard_Switch" H 7200 7450 50  0001 C CNN
 F 2 "MX_Only:MXOnly-1U" H 7200 7555 50  0001 C CNN
 F 3 "" H 7200 7555 50  0001 C CNN
 	1    7200 7550
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L keeb_parts:Keyboard_Switch KBK2
@@ -334,7 +312,7 @@ F 1 "Keyboard_Switch" H 8400 7450 50  0001 C CNN
 F 2 "MX_Only:MXOnly-1U" H 8400 7555 50  0001 C CNN
 F 3 "" H 8400 7555 50  0001 C CNN
 	1    8400 7550
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L keeb_parts:Keyboard_Switch KBM2
@@ -356,7 +334,7 @@ F 1 "Keyboard_Switch" H 9600 7450 50  0001 C CNN
 F 2 "MX_Only:MXOnly-1U" H 9600 7555 50  0001 C CNN
 F 3 "" H 9600 7555 50  0001 C CNN
 	1    9600 7550
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L keeb_parts:Keyboard_Switch KBO2
@@ -378,7 +356,7 @@ F 1 "Keyboard_Switch" H 10800 7450 50  0001 C CNN
 F 2 "MX_Only:MXOnly-1.5U" H 10800 7555 50  0001 C CNN
 F 3 "" H 10800 7555 50  0001 C CNN
 	1    10800 7550
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L keeb_chips:BAV70 D6
@@ -389,7 +367,7 @@ F 1 "BAV70" H 2400 7975 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 2400 7850 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 2400 7850 50  0001 C CNN
 	1    2400 7850
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	2300 7550 2300 7650
@@ -436,7 +414,7 @@ F 1 "Keyboard_Switch" H 2700 8400 50  0001 C CNN
 F 2 "MX_Only:MXOnly-1U" H 2700 8505 50  0001 C CNN
 F 3 "" H 2700 8505 50  0001 C CNN
 	1    2700 8500
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L keeb_parts:Keyboard_Switch KBD3
@@ -458,7 +436,7 @@ F 1 "Keyboard_Switch" H 3900 8400 50  0001 C CNN
 F 2 "MX_Only:MXOnly-1U" H 3900 8505 50  0001 C CNN
 F 3 "" H 3900 8505 50  0001 C CNN
 	1    3900 8500
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L keeb_parts:Keyboard_Switch KBF3
@@ -480,7 +458,7 @@ F 1 "Keyboard_Switch" H 5100 8400 50  0001 C CNN
 F 2 "MX_Only:MXOnly-1U" H 5100 8505 50  0001 C CNN
 F 3 "" H 5100 8505 50  0001 C CNN
 	1    5100 8500
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L keeb_parts:Keyboard_Switch KBI3
@@ -502,7 +480,7 @@ F 1 "Keyboard_Switch" H 7200 8400 50  0001 C CNN
 F 2 "MX_Only:MXOnly-1U" H 7200 8505 50  0001 C CNN
 F 3 "" H 7200 8505 50  0001 C CNN
 	1    7200 8500
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L keeb_parts:Keyboard_Switch KBK3
@@ -524,7 +502,7 @@ F 1 "Keyboard_Switch" H 8400 8400 50  0001 C CNN
 F 2 "MX_Only:MXOnly-1U" H 8400 8505 50  0001 C CNN
 F 3 "" H 8400 8505 50  0001 C CNN
 	1    8400 8500
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L keeb_parts:Keyboard_Switch KBM3
@@ -546,7 +524,7 @@ F 1 "Keyboard_Switch" H 9600 8400 50  0001 C CNN
 F 2 "MX_Only:MXOnly-1U" H 9600 8505 50  0001 C CNN
 F 3 "" H 9600 8505 50  0001 C CNN
 	1    9600 8500
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L keeb_parts:Keyboard_Switch KBP3
@@ -557,7 +535,7 @@ F 1 "Keyboard_Switch" H 10800 8400 50  0001 C CNN
 F 2 "MX_Only:MXOnly-2.25U-ReversedStabilizers" H 10800 8505 50  0001 C CNN
 F 3 "" H 10800 8505 50  0001 C CNN
 	1    10800 8500
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L keeb_chips:BAV70 D7
@@ -568,7 +546,7 @@ F 1 "BAV70" H 2400 8925 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 2400 8800 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 2400 8800 50  0001 C CNN
 	1    2400 8800
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	2300 8500 2300 8600
@@ -604,7 +582,7 @@ F 1 "Keyboard_Switch" H 2700 9350 50  0001 C CNN
 F 2 "MX_Only:MXOnly-1U" H 2700 9455 50  0001 C CNN
 F 3 "" H 2700 9455 50  0001 C CNN
 	1    2700 9450
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L keeb_parts:Keyboard_Switch KBD4
@@ -626,7 +604,7 @@ F 1 "Keyboard_Switch" H 3900 9350 50  0001 C CNN
 F 2 "MX_Only:MXOnly-1U" H 3900 9455 50  0001 C CNN
 F 3 "" H 3900 9455 50  0001 C CNN
 	1    3900 9450
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L keeb_parts:Keyboard_Switch KBF4
@@ -648,7 +626,7 @@ F 1 "Keyboard_Switch" H 5100 9350 50  0001 C CNN
 F 2 "MX_Only:MXOnly-1U" H 5100 9455 50  0001 C CNN
 F 3 "" H 5100 9455 50  0001 C CNN
 	1    5100 9450
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L keeb_parts:Keyboard_Switch KBI4
@@ -670,7 +648,7 @@ F 1 "Keyboard_Switch" H 7200 9350 50  0001 C CNN
 F 2 "MX_Only:MXOnly-1U" H 7200 9455 50  0001 C CNN
 F 3 "" H 7200 9455 50  0001 C CNN
 	1    7200 9450
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L keeb_parts:Keyboard_Switch KBK4
@@ -692,7 +670,7 @@ F 1 "Keyboard_Switch" H 8400 9350 50  0001 C CNN
 F 2 "MX_Only:MXOnly-1U" H 8400 9455 50  0001 C CNN
 F 3 "" H 8400 9455 50  0001 C CNN
 	1    8400 9450
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L keeb_parts:Keyboard_Switch KBM4
@@ -714,7 +692,7 @@ F 1 "Keyboard_Switch" H 9600 9350 50  0001 C CNN
 F 2 "MX_Only:MXOnly-1U" H 9600 9455 50  0001 C CNN
 F 3 "" H 9600 9455 50  0001 C CNN
 	1    9600 9450
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L keeb_parts:Keyboard_Switch KBO4
@@ -736,7 +714,7 @@ F 1 "Keyboard_Switch" H 10800 9350 50  0001 C CNN
 F 2 "MX_Only:MXOnly-1U" H 10800 9455 50  0001 C CNN
 F 3 "" H 10800 9455 50  0001 C CNN
 	1    10800 9450
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L keeb_chips:BAV70 D8
@@ -747,7 +725,7 @@ F 1 "BAV70" H 2400 9875 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 2400 9750 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 2400 9750 50  0001 C CNN
 	1    2400 9750
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	2300 9450 2300 9550
@@ -794,7 +772,7 @@ F 1 "Keyboard_Switch" H 4500 10300 50  0001 C CNN
 F 2 "MX_Only:MXOnly-2U-FLIPPED-ReversedStabilizers" H 4500 10405 50  0001 C CNN
 F 3 "" H 4500 10405 50  0001 C CNN
 	1    4500 10400
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L keeb_parts:Keyboard_Switch KBG5
@@ -816,7 +794,7 @@ F 1 "Keyboard_Switch" H 7200 10300 50  0001 C CNN
 F 2 "MX_Only:MXOnly-2.75U-ReversedStabilizers" H 7200 10405 50  0001 C CNN
 F 3 "" H 7200 10405 50  0001 C CNN
 	1    7200 10400
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L keeb_parts:Keyboard_Switch KBL5
@@ -827,7 +805,7 @@ F 1 "Keyboard_Switch" H 8400 10300 50  0001 C CNN
 F 2 "MX_Only:MXOnly-1.5U" H 8400 10405 50  0001 C CNN
 F 3 "" H 8400 10405 50  0001 C CNN
 	1    8400 10400
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L keeb_parts:Keyboard_Switch KBP5
@@ -838,7 +816,7 @@ F 1 "Keyboard_Switch" H 10800 10300 50  0001 C CNN
 F 2 "MX_Only:MXOnly-1.5U" H 10800 10405 50  0001 C CNN
 F 3 "" H 10800 10405 50  0001 C CNN
 	1    10800 10400
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L keeb_chips:BAV70 D9
@@ -849,7 +827,7 @@ F 1 "BAV70" H 2400 10825 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 2400 10700 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 2400 10700 50  0001 C CNN
 	1    2400 10700
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	2300 10400 2300 10500
@@ -870,7 +848,7 @@ F 1 "BAV70" H 1500 8075 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 1500 7950 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 1500 7950 50  0001 C CNN
 	1    1500 7950
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	1200 7650 1500 7650
@@ -885,7 +863,7 @@ F 1 "BAV70" H 1500 9025 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 1500 8900 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 1500 8900 50  0001 C CNN
 	1    1500 8900
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	1200 8600 1500 8600
@@ -897,17 +875,6 @@ NoConn ~ 1800 7000
 Wire Wire Line
 	1200 6700 1200 7000
 $Comp
-L keeb_chips:BAV70 D2
-U 1 1 5F4F9ED3
-P 1500 7000
-F 0 "D2" H 1500 7216 50  0000 C CNN
-F 1 "BAV70" H 1500 7125 50  0000 C CNN
-F 2 "keeb_parts:SOT-23" H 1500 7000 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 1500 7000 50  0001 C CNN
-	1    1500 7000
-	1    0    0    -1  
-$EndComp
-$Comp
 L keeb_chips:BAV70 D13
 U 1 1 5F515332
 P 3600 9750
@@ -916,7 +883,7 @@ F 1 "BAV70" H 3600 9875 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 3600 9750 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 3600 9750 50  0001 C CNN
 	1    3600 9750
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	3500 9450 3500 9550
@@ -939,7 +906,7 @@ F 1 "BAV70" H 3600 8925 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 3600 8800 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 3600 8800 50  0001 C CNN
 	1    3600 8800
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	3500 8500 3500 8600
@@ -962,7 +929,7 @@ F 1 "BAV70" H 3600 7975 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 3600 7850 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 3600 7850 50  0001 C CNN
 	1    3600 7850
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	3500 7550 3500 7650
@@ -976,17 +943,6 @@ Wire Wire Line
 	3900 7650 3700 7650
 Wire Wire Line
 	3700 7650 3700 7550
-$Comp
-L keeb_chips:BAV70 D10
-U 1 1 5F51D2E9
-P 3600 6900
-F 0 "D10" H 3600 7116 50  0000 C CNN
-F 1 "BAV70" H 3600 7025 50  0000 C CNN
-F 2 "keeb_parts:SOT-23" H 3600 6900 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 3600 6900 50  0001 C CNN
-	1    3600 6900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3500 6600 3500 6700
 Wire Wire Line
@@ -994,22 +950,9 @@ Wire Wire Line
 Wire Wire Line
 	3300 6700 3300 6900
 Wire Wire Line
-	3900 6900 3900 6700
-Wire Wire Line
 	3900 6700 3700 6700
 Wire Wire Line
 	3700 6700 3700 6600
-$Comp
-L keeb_chips:BAV70 D14
-U 1 1 5F51F246
-P 4800 6900
-F 0 "D14" H 4800 7116 50  0000 C CNN
-F 1 "BAV70" H 4800 7025 50  0000 C CNN
-F 2 "keeb_parts:SOT-23" H 4800 6900 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 4800 6900 50  0001 C CNN
-	1    4800 6900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4700 6600 4700 6700
 Wire Wire Line
@@ -1031,7 +974,7 @@ F 1 "BAV70" H 4800 7975 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 4800 7850 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 4800 7850 50  0001 C CNN
 	1    4800 7850
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	4700 7550 4700 7650
@@ -1054,7 +997,7 @@ F 1 "BAV70" H 4800 8925 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 4800 8800 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 4800 8800 50  0001 C CNN
 	1    4800 8800
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	4700 8500 4700 8600
@@ -1077,7 +1020,7 @@ F 1 "BAV70" H 4800 9875 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 4800 9750 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 4800 9750 50  0001 C CNN
 	1    4800 9750
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	4700 9450 4700 9550
@@ -1100,7 +1043,7 @@ F 1 "BAV70" H 4800 10825 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 4800 10700 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 4800 10700 50  0001 C CNN
 	1    4800 10700
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	4700 10400 4700 10500
@@ -1123,7 +1066,7 @@ F 1 "BAV70" H 6900 7025 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 6900 6900 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 6900 6900 50  0001 C CNN
 	1    6900 6900
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	6800 6600 6800 6700
@@ -1146,7 +1089,7 @@ F 1 "BAV70" H 6900 7975 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 6900 7850 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 6900 7850 50  0001 C CNN
 	1    6900 7850
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	6800 7550 6800 7650
@@ -1169,7 +1112,7 @@ F 1 "BAV70" H 6900 8925 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 6900 8800 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 6900 8800 50  0001 C CNN
 	1    6900 8800
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	6800 8500 6800 8600
@@ -1192,7 +1135,7 @@ F 1 "BAV70" H 6900 9875 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 6900 9750 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 6900 9750 50  0001 C CNN
 	1    6900 9750
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	6800 9450 6800 9550
@@ -1217,7 +1160,7 @@ F 1 "BAV70" H 8100 7025 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 8100 6900 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 8100 6900 50  0001 C CNN
 	1    8100 6900
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	8000 6600 8000 6700
@@ -1240,7 +1183,7 @@ F 1 "BAV70" H 8100 7975 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 8100 7850 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 8100 7850 50  0001 C CNN
 	1    8100 7850
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	8000 7550 8000 7650
@@ -1263,7 +1206,7 @@ F 1 "BAV70" H 8100 8925 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 8100 8800 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 8100 8800 50  0001 C CNN
 	1    8100 8800
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	8000 8500 8000 8600
@@ -1286,7 +1229,7 @@ F 1 "BAV70" H 8100 9875 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 8100 9750 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 8100 9750 50  0001 C CNN
 	1    8100 9750
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	8000 9450 8000 9550
@@ -1309,7 +1252,7 @@ F 1 "BAV70" H 8100 10825 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 8100 10700 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 8100 10700 50  0001 C CNN
 	1    8100 10700
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	8400 10700 8400 10500
@@ -1326,7 +1269,7 @@ F 1 "BAV70" H 9300 7025 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 9300 6900 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 9300 6900 50  0001 C CNN
 	1    9300 6900
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	9200 6600 9200 6700
@@ -1349,7 +1292,7 @@ F 1 "BAV70" H 9300 7975 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 9300 7850 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 9300 7850 50  0001 C CNN
 	1    9300 7850
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	9200 7550 9200 7650
@@ -1372,7 +1315,7 @@ F 1 "BAV70" H 9300 8925 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 9300 8800 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 9300 8800 50  0001 C CNN
 	1    9300 8800
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	9200 8500 9200 8600
@@ -1395,7 +1338,7 @@ F 1 "BAV70" H 9300 9875 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 9300 9750 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 9300 9750 50  0001 C CNN
 	1    9300 9750
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	9200 9450 9200 9550
@@ -1418,7 +1361,7 @@ F 1 "BAV70" H 10500 7025 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 10500 6900 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 10500 6900 50  0001 C CNN
 	1    10500 6900
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	10400 6600 10400 6700
@@ -1441,7 +1384,7 @@ F 1 "BAV70" H 10500 7975 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 10500 7850 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 10500 7850 50  0001 C CNN
 	1    10500 7850
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	10400 7550 10400 7650
@@ -1464,7 +1407,7 @@ F 1 "BAV70" H 10500 8925 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 10500 8800 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 10500 8800 50  0001 C CNN
 	1    10500 8800
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	10800 8800 10800 8600
@@ -1481,7 +1424,7 @@ F 1 "BAV70" H 10500 9875 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 10500 9750 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 10500 9750 50  0001 C CNN
 	1    10500 9750
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	10400 9450 10400 9550
@@ -1504,7 +1447,7 @@ F 1 "BAV70" H 10500 10825 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 10500 10700 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 10500 10700 50  0001 C CNN
 	1    10500 10700
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	10800 10700 10800 10500
@@ -1575,11 +1518,6 @@ Connection ~ 2900 6600
 Wire Wire Line
 	3100 6600 3100 6250
 Connection ~ 3100 6600
-Wire Wire Line
-	4100 6250 4100 6600
-Connection ~ 4100 6600
-Wire Wire Line
-	4100 6600 4100 7550
 Connection ~ 4100 7550
 Wire Wire Line
 	4100 7550 4100 8500
@@ -1620,17 +1558,6 @@ Wire Wire Line
 	5600 6700 5900 6700
 Wire Wire Line
 	5600 6700 5600 7000
-$Comp
-L keeb_chips:BAV70 D19
-U 1 1 5F7AEFB2
-P 5900 7000
-F 0 "D19" H 5900 7216 50  0000 C CNN
-F 1 "BAV70" H 5900 7125 50  0000 C CNN
-F 2 "keeb_parts:SOT-23" H 5900 7000 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 5900 7000 50  0001 C CNN
-	1    5900 7000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5900 6600 5900 6700
 NoConn ~ 6200 7000
@@ -4105,7 +4032,7 @@ F 1 "Keyboard_Switch" H 4500 10050 50  0001 C CNN
 F 2 "MX_Only:MXOnly-2.25U-ReversedStabilizers" H 4500 10155 50  0001 C CNN
 F 3 "" H 4500 10155 50  0001 C CNN
 	1    4500 10150
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Connection ~ 4300 10150
 Wire Wire Line
@@ -4137,10 +4064,10 @@ U 1 1 6229745E
 P 10800 6350
 F 0 "KBP1-1" H 10800 6543 50  0000 C CNN
 F 1 "Keyboard_Switch" H 10800 6250 50  0001 C CNN
-F 2 "MX_Only:MXOnly-1U" H 10800 6355 50  0001 C CNN
+F 2 "MX_Only:MXOnly-1U-FLIPPED" H 10800 6355 50  0001 C CNN
 F 3 "" H 10800 6355 50  0001 C CNN
 	1    10800 6350
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Connection ~ 11000 6350
 Wire Wire Line
@@ -4218,7 +4145,7 @@ U 2 1 5F5473C6
 P 12900 1100
 F 0 "KBP1-1" H 12900 936 50  0000 C CNN
 F 1 "Keyboard_Switch" H 12900 1000 50  0001 C CNN
-F 2 "MX_Only:MXOnly-1U" H 12900 1105 50  0001 C CNN
+F 2 "MX_Only:MXOnly-1U-FLIPPED" H 12900 1105 50  0001 C CNN
 F 3 "" H 12900 1105 50  0001 C CNN
 	2    12900 1100
 	-1   0    0    1   
@@ -4405,5 +4332,78 @@ F 2 "keeb_parts:R_0603_1608Metric" H 1200 1550 50  0001 C CNN
 F 3 "~" H 1200 1550 50  0001 C CNN
 	1    1200 1550
 	1    0    0    1   
+$EndComp
+$Comp
+L keeb_chips:BAV70 D19
+U 1 1 5F7AEFB2
+P 5900 7000
+F 0 "D19" H 5900 7216 50  0000 C CNN
+F 1 "BAV70" H 5900 7125 50  0000 C CNN
+F 2 "keeb_parts:SOT-23" H 5900 7000 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 5900 7000 50  0001 C CNN
+	1    5900 7000
+	-1   0    0    -1  
+$EndComp
+$Comp
+L keeb_chips:BAV70 D14
+U 1 1 5F51F246
+P 4800 6900
+F 0 "D14" H 4800 7116 50  0000 C CNN
+F 1 "BAV70" H 4800 7025 50  0000 C CNN
+F 2 "keeb_parts:SOT-23" H 4800 6900 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 4800 6900 50  0001 C CNN
+	1    4800 6900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L keeb_chips:BAV70 D10
+U 1 1 5F51D2E9
+P 3600 6900
+F 0 "D10" H 3600 7116 50  0000 C CNN
+F 1 "BAV70" H 3600 7025 50  0000 C CNN
+F 2 "keeb_parts:SOT-23" H 3600 6900 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 3600 6900 50  0001 C CNN
+	1    3600 6900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L keeb_chips:BAV70 D5
+U 1 1 5F4A6639
+P 2400 6900
+F 0 "D5" H 2400 7116 50  0000 C CNN
+F 1 "BAV70" H 2400 7025 50  0000 C CNN
+F 2 "keeb_parts:SOT-23" H 2400 6900 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 2400 6900 50  0001 C CNN
+	1    2400 6900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L keeb_chips:BAV70 D2
+U 1 1 5F4F9ED3
+P 1500 7000
+F 0 "D2" H 1500 7216 50  0000 C CNN
+F 1 "BAV70" H 1500 7125 50  0000 C CNN
+F 2 "keeb_parts:SOT-23" H 1500 7000 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 1500 7000 50  0001 C CNN
+	1    1500 7000
+	-1   0    0    -1  
+$EndComp
+Connection ~ 4100 6600
+Wire Wire Line
+	4100 6600 4100 7550
+Wire Wire Line
+	4100 6250 4100 6600
+Wire Wire Line
+	3900 6900 3900 6700
+$Comp
+L keeb_parts:Keyboard_Switch KBE1
+U 1 1 5F46D283
+P 3900 6600
+F 0 "KBE1" H 3900 6793 50  0000 C CNN
+F 1 "Keyboard_Switch" H 3900 6500 50  0001 C CNN
+F 2 "MX_Only:MXOnly-1U" H 3900 6605 50  0001 C CNN
+F 3 "" H 3900 6605 50  0001 C CNN
+	1    3900 6600
+	-1   0    0    -1  
 $EndComp
 $EndSCHEMATC
