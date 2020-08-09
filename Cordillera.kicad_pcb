@@ -5,8 +5,8 @@
     (drawings 15)
     (tracks 0)
     (zones 0)
-    (modules 202)
-    (nets 215)
+    (modules 208)
+    (nets 221)
   )
 
   (page A3)
@@ -305,6 +305,12 @@
   (net 212 "Net-(KBG5-1-Pad4)")
   (net 213 "Net-(KBP1-1-Pad4)")
   (net 214 "Net-(KBO4-1-Pad4)")
+  (net 215 /LED_1)
+  (net 216 /LED_2)
+  (net 217 /LED_3)
+  (net 218 "Net-(D38-Pad2)")
+  (net 219 "Net-(D39-Pad2)")
+  (net 220 "Net-(D40-Pad2)")
 
   (net_class Default "This is the default net class."
     (clearance 0.2)
@@ -318,6 +324,9 @@
     (add_net /BOOT0)
     (add_net /D+)
     (add_net /D-)
+    (add_net /LED_1)
+    (add_net /LED_2)
+    (add_net /LED_3)
     (add_net /LED_GND)
     (add_net /LED_PWM)
     (add_net /NRST)
@@ -411,8 +420,11 @@
     (add_net "Net-(D36-Pad2)")
     (add_net "Net-(D37-Pad1)")
     (add_net "Net-(D37-Pad2)")
+    (add_net "Net-(D38-Pad2)")
+    (add_net "Net-(D39-Pad2)")
     (add_net "Net-(D4-Pad1)")
     (add_net "Net-(D4-Pad2)")
+    (add_net "Net-(D40-Pad2)")
     (add_net "Net-(D5-Pad1)")
     (add_net "Net-(D5-Pad2)")
     (add_net "Net-(D6-Pad1)")
@@ -529,7 +541,208 @@
     (add_net VBUS)
   )
 
-  (module MX_Only:MXOnly-1.5U (layer F.Cu) (tedit 5AC998EE) (tstamp 5F2E9899)
+  (module keeb_lighting:LED_D3.0mm (layer F.Cu) (tedit 5F2FCFEE) (tstamp 5F3497F9)
+    (at -8.55 85.62)
+    (descr "LED, diameter 3.0mm, 2 pins")
+    (tags "LED diameter 3.0mm 2 pins")
+    (path /5F8ACDD5)
+    (fp_text reference D40 (at 1.27 -2.96) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value "LED 3" (at 1.27 2.96) (layer F.Fab)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_line (start 3.7 -2.25) (end -1.15 -2.25) (layer F.CrtYd) (width 0.05))
+    (fp_line (start 3.7 2.25) (end 3.7 -2.25) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -1.15 2.25) (end 3.7 2.25) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -1.15 -2.25) (end -1.15 2.25) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -0.23 -1.16619) (end -0.23 1.16619) (layer F.Fab) (width 0.1))
+    (fp_circle (center 1.27 0) (end 2.77 0) (layer F.Fab) (width 0.1))
+    (fp_arc (start 1.27 0) (end 0.229039 1.08) (angle -87.9) (layer F.SilkS) (width 0.12))
+    (fp_arc (start 1.27 0) (end 0.229039 -1.08) (angle 87.9) (layer F.SilkS) (width 0.12))
+    (fp_arc (start 1.27 0) (end -0.23 -1.16619) (angle 284.3) (layer F.Fab) (width 0.1))
+    (pad 2 thru_hole circle (at 2.54 0) (size 1.8 1.8) (drill 0.9) (layers *.Cu *.Mask)
+      (net 220 "Net-(D40-Pad2)"))
+    (pad 1 thru_hole rect (at 0 0) (size 1.8 1.8) (drill 0.9) (layers *.Cu *.Mask)
+      (net 2 GND))
+    (model ${KISYS3DMOD}/LED_THT.3dshapes/LED_D3.0mm.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+  )
+
+  (module keeb_lighting:LED_D3.0mm (layer F.Cu) (tedit 5F2FCFDC) (tstamp 5F3497E6)
+    (at -8.55 81.12)
+    (descr "LED, diameter 3.0mm, 2 pins")
+    (tags "LED diameter 3.0mm 2 pins")
+    (path /5F8AC84D)
+    (fp_text reference D39 (at 1.27 -2.96) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value "LED 2" (at 1.27 2.96) (layer F.Fab)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_line (start 3.7 -2.25) (end -1.15 -2.25) (layer F.CrtYd) (width 0.05))
+    (fp_line (start 3.7 2.25) (end 3.7 -2.25) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -1.15 2.25) (end 3.7 2.25) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -1.15 -2.25) (end -1.15 2.25) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -0.23 -1.16619) (end -0.23 1.16619) (layer F.Fab) (width 0.1))
+    (fp_circle (center 1.27 0) (end 2.77 0) (layer F.Fab) (width 0.1))
+    (fp_arc (start 1.27 0) (end 0.229039 1.08) (angle -87.9) (layer F.SilkS) (width 0.12))
+    (fp_arc (start 1.27 0) (end 0.229039 -1.08) (angle 87.9) (layer F.SilkS) (width 0.12))
+    (fp_arc (start 1.27 0) (end -0.23 -1.16619) (angle 284.3) (layer F.Fab) (width 0.1))
+    (pad 2 thru_hole circle (at 2.54 0) (size 1.8 1.8) (drill 0.9) (layers *.Cu *.Mask)
+      (net 219 "Net-(D39-Pad2)"))
+    (pad 1 thru_hole rect (at 0 0) (size 1.8 1.8) (drill 0.9) (layers *.Cu *.Mask)
+      (net 2 GND))
+    (model ${KISYS3DMOD}/LED_THT.3dshapes/LED_D3.0mm.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+  )
+
+  (module keeb_lighting:LED_D3.0mm (layer F.Cu) (tedit 5F2FCFCC) (tstamp 5F3497D3)
+    (at -8.55 76.62)
+    (descr "LED, diameter 3.0mm, 2 pins")
+    (tags "LED diameter 3.0mm 2 pins")
+    (path /5F8AAE9D)
+    (fp_text reference D38 (at 1.27 -2.96) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value "LED 1" (at 1.27 2.96) (layer F.Fab)
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_line (start 3.7 -2.25) (end -1.15 -2.25) (layer F.CrtYd) (width 0.05))
+    (fp_line (start 3.7 2.25) (end 3.7 -2.25) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -1.15 2.25) (end 3.7 2.25) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -1.15 -2.25) (end -1.15 2.25) (layer F.CrtYd) (width 0.05))
+    (fp_line (start -0.23 -1.16619) (end -0.23 1.16619) (layer F.Fab) (width 0.1))
+    (fp_circle (center 1.27 0) (end 2.77 0) (layer F.Fab) (width 0.1))
+    (fp_arc (start 1.27 0) (end 0.229039 1.08) (angle -87.9) (layer F.SilkS) (width 0.12))
+    (fp_arc (start 1.27 0) (end 0.229039 -1.08) (angle 87.9) (layer F.SilkS) (width 0.12))
+    (fp_arc (start 1.27 0) (end -0.23 -1.16619) (angle 284.3) (layer F.Fab) (width 0.1))
+    (pad 2 thru_hole circle (at 2.54 0) (size 1.8 1.8) (drill 0.9) (layers *.Cu *.Mask)
+      (net 218 "Net-(D38-Pad2)"))
+    (pad 1 thru_hole rect (at 0 0) (size 1.8 1.8) (drill 0.9) (layers *.Cu *.Mask)
+      (net 2 GND))
+    (model ${KISYS3DMOD}/LED_THT.3dshapes/LED_D3.0mm.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+  )
+
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F34AE48)
+    (at -2.2125 85.62)
+    (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+    (tags resistor)
+    (path /5F8D1CE0)
+    (attr smd)
+    (fp_text reference R77 (at 2.2125 0) (layer B.SilkS)
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror))
+    )
+    (fp_text value 470 (at 0 -1.43) (layer B.Fab)
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_text user %R (at 0 0) (layer B.Fab)
+      (effects (font (size 0.4 0.4) (thickness 0.06)) (justify mirror))
+    )
+    (fp_line (start 1.48 -0.73) (end -1.48 -0.73) (layer B.CrtYd) (width 0.05))
+    (fp_line (start 1.48 0.73) (end 1.48 -0.73) (layer B.CrtYd) (width 0.05))
+    (fp_line (start -1.48 0.73) (end 1.48 0.73) (layer B.CrtYd) (width 0.05))
+    (fp_line (start -1.48 -0.73) (end -1.48 0.73) (layer B.CrtYd) (width 0.05))
+    (fp_line (start -0.162779 -0.51) (end 0.162779 -0.51) (layer B.SilkS) (width 0.12))
+    (fp_line (start -0.162779 0.51) (end 0.162779 0.51) (layer B.SilkS) (width 0.12))
+    (fp_line (start 0.8 -0.4) (end -0.8 -0.4) (layer B.Fab) (width 0.1))
+    (fp_line (start 0.8 0.4) (end 0.8 -0.4) (layer B.Fab) (width 0.1))
+    (fp_line (start -0.8 0.4) (end 0.8 0.4) (layer B.Fab) (width 0.1))
+    (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
+    (pad 2 smd roundrect (at 0.7875 0) (size 0.875 0.95) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
+      (net 217 /LED_3))
+    (pad 1 smd roundrect (at -0.7875 0) (size 0.875 0.95) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
+      (net 220 "Net-(D40-Pad2)"))
+    (model ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+  )
+
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F34F2B3)
+    (at -2.2125 81.12)
+    (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+    (tags resistor)
+    (path /5F8C72A6)
+    (attr smd)
+    (fp_text reference R76 (at 2.2125 0) (layer B.SilkS)
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror))
+    )
+    (fp_text value 470 (at 0 -1.43) (layer B.Fab)
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_text user %R (at 0 0) (layer B.Fab)
+      (effects (font (size 0.4 0.4) (thickness 0.06)) (justify mirror))
+    )
+    (fp_line (start 1.48 -0.73) (end -1.48 -0.73) (layer B.CrtYd) (width 0.05))
+    (fp_line (start 1.48 0.73) (end 1.48 -0.73) (layer B.CrtYd) (width 0.05))
+    (fp_line (start -1.48 0.73) (end 1.48 0.73) (layer B.CrtYd) (width 0.05))
+    (fp_line (start -1.48 -0.73) (end -1.48 0.73) (layer B.CrtYd) (width 0.05))
+    (fp_line (start -0.162779 -0.51) (end 0.162779 -0.51) (layer B.SilkS) (width 0.12))
+    (fp_line (start -0.162779 0.51) (end 0.162779 0.51) (layer B.SilkS) (width 0.12))
+    (fp_line (start 0.8 -0.4) (end -0.8 -0.4) (layer B.Fab) (width 0.1))
+    (fp_line (start 0.8 0.4) (end 0.8 -0.4) (layer B.Fab) (width 0.1))
+    (fp_line (start -0.8 0.4) (end 0.8 0.4) (layer B.Fab) (width 0.1))
+    (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
+    (pad 2 smd roundrect (at 0.7875 0) (size 0.875 0.95) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
+      (net 216 /LED_2))
+    (pad 1 smd roundrect (at -0.7875 0) (size 0.875 0.95) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
+      (net 219 "Net-(D39-Pad2)"))
+    (model ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+  )
+
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F34AE26)
+    (at -2.2125 76.62)
+    (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
+    (tags resistor)
+    (path /5F8B84D2)
+    (attr smd)
+    (fp_text reference R75 (at 2.2125 0) (layer B.SilkS)
+      (effects (font (size 0.8 0.8) (thickness 0.15)) (justify right mirror))
+    )
+    (fp_text value 470 (at 0 -1.43) (layer B.Fab)
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_text user %R (at 0 0) (layer B.Fab)
+      (effects (font (size 0.4 0.4) (thickness 0.06)) (justify mirror))
+    )
+    (fp_line (start 1.48 -0.73) (end -1.48 -0.73) (layer B.CrtYd) (width 0.05))
+    (fp_line (start 1.48 0.73) (end 1.48 -0.73) (layer B.CrtYd) (width 0.05))
+    (fp_line (start -1.48 0.73) (end 1.48 0.73) (layer B.CrtYd) (width 0.05))
+    (fp_line (start -1.48 -0.73) (end -1.48 0.73) (layer B.CrtYd) (width 0.05))
+    (fp_line (start -0.162779 -0.51) (end 0.162779 -0.51) (layer B.SilkS) (width 0.12))
+    (fp_line (start -0.162779 0.51) (end 0.162779 0.51) (layer B.SilkS) (width 0.12))
+    (fp_line (start 0.8 -0.4) (end -0.8 -0.4) (layer B.Fab) (width 0.1))
+    (fp_line (start 0.8 0.4) (end 0.8 -0.4) (layer B.Fab) (width 0.1))
+    (fp_line (start -0.8 0.4) (end 0.8 0.4) (layer B.Fab) (width 0.1))
+    (fp_line (start -0.8 -0.4) (end -0.8 0.4) (layer B.Fab) (width 0.1))
+    (pad 2 smd roundrect (at 0.7875 0) (size 0.875 0.95) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
+      (net 215 /LED_1))
+    (pad 1 smd roundrect (at -0.7875 0) (size 0.875 0.95) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.25)
+      (net 218 "Net-(D38-Pad2)"))
+    (model ${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0603_1608Metric.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+  )
+
+  (module MX_Only:MXOnly-1.5U (layer F.Cu) (tedit 5AC998EE) (tstamp 5F343A7D)
     (at 306.04 21.19)
     (path /5F4680BD/5F4CD769)
     (fp_text reference KBP2 (at 0 3.175) (layer Dwgs.User)
@@ -563,7 +776,7 @@
       (net 157 "/Switch + LED Matrix/colP"))
   )
 
-  (module MX_Only:MXOnly-1.5U (layer F.Cu) (tedit 5AC998EE) (tstamp 5F2E98DE)
+  (module MX_Only:MXOnly-1.5U (layer F.Cu) (tedit 5AC998EE) (tstamp 5F343ABF)
     (at 310.8 78.39)
     (path /5F4680BD/5F4F7D87)
     (fp_text reference KBP5 (at 0 3.175) (layer Dwgs.User)
@@ -597,7 +810,7 @@
       (net 157 "/Switch + LED Matrix/colP"))
   )
 
-  (module MX_Only:MXOnly-1.5U (layer F.Cu) (tedit 5AC998EE) (tstamp 5F2E9757)
+  (module MX_Only:MXOnly-1.5U (layer F.Cu) (tedit 5AC998EE) (tstamp 5F343B01)
     (at 232.11 80.84 12)
     (path /5F4680BD/5F4F7D6F)
     (fp_text reference KBL5 (at 0 3.175 12) (layer Dwgs.User)
@@ -631,7 +844,7 @@
       (net 139 "/Switch + LED Matrix/colL"))
   )
 
-  (module MX_Only:MXOnly-2.25U-ReversedStabilizers (layer F.Cu) (tedit 5AC9A32B) (tstamp 5F309652)
+  (module MX_Only:MXOnly-2.25U-ReversedStabilizers (layer F.Cu) (tedit 5AC9A32B) (tstamp 5F343B47)
     (at 112.93 86.86 348)
     (path /5F4680BD/61F8C69A)
     (fp_text reference KBF5-1 (at 0 3.175 168) (layer Dwgs.User)
@@ -669,7 +882,7 @@
       (net 45 "Net-(D18-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-2U-FLIPPED-ReversedStabilizers (layer F.Cu) (tedit 5AE7B99A) (tstamp 5F2E952F)
+  (module MX_Only:MXOnly-2U-FLIPPED-ReversedStabilizers (layer F.Cu) (tedit 5AE7B99A) (tstamp 5F343B95)
     (at 110.64 86.37 348)
     (path /5F4680BD/5F4F7D4B)
     (fp_text reference KBF5 (at 0 3.175 168) (layer Dwgs.User)
@@ -707,7 +920,7 @@
       (net 45 "Net-(D18-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-1.25U-FLIPPED (layer F.Cu) (tedit 5AC994A7) (tstamp 5F2E95A2)
+  (module MX_Only:MXOnly-1.25U-FLIPPED (layer F.Cu) (tedit 5AC994A7) (tstamp 5F343BDF)
     (at 140.94 92.81 348)
     (path /5F4680BD/5F4F7D51)
     (fp_text reference KBG5 (at 0 3.175 168) (layer Dwgs.User)
@@ -741,7 +954,7 @@
       (net 116 "/Switch + LED Matrix/colG"))
   )
 
-  (module MX_Only:MXOnly-2.75U-ReversedStabilizers (layer F.Cu) (tedit 5AC9A314) (tstamp 5F2E9688)
+  (module MX_Only:MXOnly-2.75U-ReversedStabilizers (layer F.Cu) (tedit 5AC9A314) (tstamp 5F343C25)
     (at 191.7 87.9 12)
     (path /5F4680BD/5F4F7D63)
     (fp_text reference KBJ5 (at 0 3.175 12) (layer Dwgs.User)
@@ -779,7 +992,7 @@
       (net 128 "/Switch + LED Matrix/colJ"))
   )
 
-  (module MX_Only:MXOnly-1.5U (layer F.Cu) (tedit 5AC998EE) (tstamp 5F2E9460)
+  (module MX_Only:MXOnly-1.5U (layer F.Cu) (tedit 5AC998EE) (tstamp 5F343C6F)
     (at 77.4 80.84 348)
     (path /5F4680BD/5F4F7D3F)
     (fp_text reference KBD5 (at 0 3.175 168) (layer Dwgs.User)
@@ -813,7 +1026,7 @@
       (net 26 "Net-(D9-Pad2)"))
   )
 
-  (module MX_Only:MXOnly-1.75U-FLIPPED (layer F.Cu) (tedit 5AE7C202) (tstamp 5F315CC7)
+  (module MX_Only:MXOnly-1.75U-FLIPPED (layer F.Cu) (tedit 5AE7C202) (tstamp 5F343CB1)
     (at 293.05 59.29)
     (path /5F4680BD/6239A71E)
     (fp_text reference KBO4-1 (at 0 3.175) (layer Dwgs.User)
@@ -847,7 +1060,7 @@
       (net 81 "Net-(D36-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-2.75U (layer F.Cu) (tedit 5AC9A1AE) (tstamp 5F2E986B)
+  (module MX_Only:MXOnly-2.75U (layer F.Cu) (tedit 5AC9A1AE) (tstamp 5F343CF7)
     (at 302.57 59.29)
     (path /5F4680BD/5F4EE316)
     (fp_text reference KBO4 (at 0 3.175) (layer Dwgs.User)
@@ -885,7 +1098,7 @@
       (net 81 "Net-(D36-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-2.25U-ReversedStabilizers (layer F.Cu) (tedit 5AC9A32B) (tstamp 5F2E98B0)
+  (module MX_Only:MXOnly-2.25U-ReversedStabilizers (layer F.Cu) (tedit 5AC9A32B) (tstamp 5F343D45)
     (at 303.16 40.24)
     (path /5F4680BD/5F4E4F00)
     (fp_text reference KBP3 (at 0 3.175) (layer Dwgs.User)
@@ -923,7 +1136,7 @@
       (net 157 "/Switch + LED Matrix/colP"))
   )
 
-  (module MX_Only:MXOnly-1.25U-FLIPPED (layer F.Cu) (tedit 5AC994A7) (tstamp 5F2F4F16)
+  (module MX_Only:MXOnly-1.25U-FLIPPED (layer F.Cu) (tedit 5AC994A7) (tstamp 5F343D8F)
     (at 25.4 40.24)
     (path /5F4680BD/61C4CD97)
     (fp_text reference KBB3-1 (at 0 3.175) (layer Dwgs.User)
@@ -957,7 +1170,7 @@
       (net 21 "Net-(D7-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-1.5U (layer F.Cu) (tedit 5AC998EE) (tstamp 5F2E9391)
+  (module MX_Only:MXOnly-1.5U (layer F.Cu) (tedit 5AC998EE) (tstamp 5F343DD1)
     (at 23.62 78.34)
     (path /5F4680BD/5F4F7D33)
     (fp_text reference KBB5 (at 0 3.175) (layer Dwgs.User)
@@ -991,7 +1204,7 @@
       (net 27 "Net-(D9-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F311BEA)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F346555)
     (at 306.63 2.14)
     (path /5F4680BD/6229745E)
     (fp_text reference KBP1-1 (at 0 3.175) (layer Dwgs.User)
@@ -1025,7 +1238,7 @@
       (net 157 "/Switch + LED Matrix/colP"))
   )
 
-  (module MX_Only:MXOnly-2U (layer F.Cu) (tedit 5AC99989) (tstamp 5F2E9882)
+  (module MX_Only:MXOnly-2U (layer F.Cu) (tedit 5AC99989) (tstamp 5F344C78)
     (at 297.11 2.14)
     (path /5F4680BD/5F47177C)
     (fp_text reference KBP1 (at 0 3.175) (layer Dwgs.User)
@@ -1063,7 +1276,7 @@
       (net 157 "/Switch + LED Matrix/colP"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F309745)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F344F4A)
     (at 143.25 93.3 348)
     (path /5F4680BD/6201313F)
     (fp_text reference KBG5-1 (at 0 3.175 168) (layer Dwgs.User)
@@ -1097,7 +1310,7 @@
       (net 116 "/Switch + LED Matrix/colG"))
   )
 
-  (module MX_Only:MXOnly-1.75U (layer F.Cu) (tedit 5AC99953) (tstamp 5F2E9363)
+  (module MX_Only:MXOnly-1.75U (layer F.Cu) (tedit 5AC99953) (tstamp 5F344D43)
     (at 30.16 40.24)
     (path /5F4680BD/5F4E4EAC)
     (fp_text reference KBB3 (at 0 3.175) (layer Dwgs.User)
@@ -1131,7 +1344,7 @@
       (net 21 "Net-(D7-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-1.5U (layer F.Cu) (tedit 5AC998EE) (tstamp 5F2E934C)
+  (module MX_Only:MXOnly-1.5U (layer F.Cu) (tedit 5AC998EE) (tstamp 5F344D01)
     (at 31.85 21.19)
     (path /5F4680BD/5F4CD715)
     (fp_text reference KBB2 (at 0 3.175) (layer Dwgs.User)
@@ -1165,7 +1378,7 @@
       (net 19 "Net-(D6-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-2.25U (layer F.Cu) (tedit 5AC9A18D) (tstamp 5F2E937A)
+  (module MX_Only:MXOnly-2.25U (layer F.Cu) (tedit 5AC9A18D) (tstamp 5F34502C)
     (at 30.76 59.29)
     (path /5F4680BD/5F4EE2C8)
     (fp_text reference KBB4 (at 0 3.175) (layer Dwgs.User)
@@ -1203,7 +1416,7 @@
       (net 24 "Net-(D8-Pad1)"))
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F31CAE0)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F344FEA)
     (at 156.8 84.36 90)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -1244,7 +1457,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E98EF)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F344C36)
     (at 145.33 28.49 90)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -1285,7 +1498,7 @@
     )
   )
 
-  (module keeb_connectors:HRO-TYPE-C-31-M-12 (layer B.Cu) (tedit 5C42C658) (tstamp 5F30BFC2)
+  (module keeb_connectors:HRO-TYPE-C-31-M-12 (layer B.Cu) (tedit 5C42C658) (tstamp 5F344ED2)
     (at 159.37 -16.78)
     (path /5F3157D1)
     (attr smd)
@@ -1335,7 +1548,7 @@
       (net 3 "Net-(C7-Pad1)"))
   )
 
-  (module keeb_parts:SOT-23-6 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E9E9F)
+  (module keeb_parts:SOT-23-6 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F344CC1)
     (at 160.82 0.59 90)
     (descr "6-pin SOT-23 package")
     (tags SOT-23-6)
@@ -1380,7 +1593,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E9E89)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F344E91)
     (at 151.65 2.95 90)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -1421,7 +1634,7 @@
     )
   )
 
-  (module keeb_mcu:LQFP-48_7x7mm_P0.5mm (layer B.Cu) (tedit 5C18330E) (tstamp 5F2E9E74)
+  (module keeb_mcu:LQFP-48_7x7mm_P0.5mm (layer B.Cu) (tedit 5C18330E) (tstamp 5F344DC9)
     (at 152.8 45.98 90)
     (descr "LQFP, 48 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ltc2358-16.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "LQFP QFP")
@@ -1577,7 +1790,7 @@
     )
   )
 
-  (module keeb_parts:TactSwitch_SPST_5.1x5.1mm (layer B.Cu) (tedit 5E62B398) (tstamp 5F2E9E19)
+  (module keeb_parts:TactSwitch_SPST_5.1x5.1mm (layer B.Cu) (tedit 5E62B398) (tstamp 5F344BE8)
     (at 156.37 76.81 270)
     (path /5F4293F1)
     (attr smd)
@@ -1622,7 +1835,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9DFB)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F344BAB)
     (at 316 84 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -1658,7 +1871,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9DEA)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F344F14)
     (at 325 65 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -1694,7 +1907,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9DD9)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F344FB6)
     (at 309 46 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -1730,7 +1943,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9DC8)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F344F86)
     (at 312 27 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -1766,7 +1979,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9DB7)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F343E6D)
     (at 302 8 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -1802,7 +2015,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9DA6)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F34410D)
     (at 309 65 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -1838,7 +2051,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9D84)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F343E3D)
     (at 288 27 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -1874,7 +2087,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9D73)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F34401D)
     (at 292 8 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -1910,7 +2123,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9D62)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F34404D)
     (at 273 65 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -1946,7 +2159,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9D51)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F343E0D)
     (at 278 46 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -1982,7 +2195,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9D40)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F34413D)
     (at 269 27 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -2018,7 +2231,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9D2F)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F343F2D)
     (at 273 8 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -2054,7 +2267,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9D1E)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F343FED)
     (at 254 65 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -2090,7 +2303,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9D0D)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F3440DD)
     (at 259 46 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -2126,7 +2339,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9CFC)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F343FBD)
     (at 251 26 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -2162,7 +2375,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9CEB)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F3440AD)
     (at 255 6 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -2198,7 +2411,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9CDA)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F343F8D)
     (at 239 85 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -2234,7 +2447,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9CC9)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F343EFD)
     (at 235 65 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -2270,7 +2483,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9CB8)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F34407D)
     (at 240 45 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -2306,7 +2519,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9CA7)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F343F5D)
     (at 232 27 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -2342,7 +2555,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9C96)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F343ECD)
     (at 236 6 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -2378,7 +2591,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9C85)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F343E9D)
     (at 216 69 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -2414,7 +2627,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9C74)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F346831)
     (at 221 49 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -2450,7 +2663,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9C63)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F346681)
     (at 213 31 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -2486,7 +2699,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9C52)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F3467A1)
     (at 217 10 282)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -2522,7 +2735,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9C41)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F3466B1)
     (at 199 92 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -2558,7 +2771,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9C30)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F346741)
     (at 197 73 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -2594,7 +2807,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9C1F)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F346651)
     (at 203 53 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -2630,7 +2843,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9C0E)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F346621)
     (at 194 35 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -2666,7 +2879,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9BFD)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F3465C1)
     (at 198 14 282)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -2702,7 +2915,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9BEC)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F3465F1)
     (at 178 77 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -2738,7 +2951,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9BDB)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F346771)
     (at 183 56 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -2774,7 +2987,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9BCA)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F346591)
     (at 175 38 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -2810,7 +3023,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9BB9)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F346711)
     (at 180 18 282)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -2846,7 +3059,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9BA8)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F3466E1)
     (at 149 23 258)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -2882,7 +3095,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9B97)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F3468C1)
     (at 147 100 258)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -2918,7 +3131,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9B86)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F346891)
     (at 142 80 258)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -2954,7 +3167,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9B75)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F346861)
     (at 137 58 258)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -2990,7 +3203,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9B64)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F346801)
     (at 136 39 258)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -3026,7 +3239,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9B53)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F3467D1)
     (at 130 19 258)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -3062,7 +3275,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9B42)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F3448AB)
     (at 116 93 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -3098,7 +3311,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9B31)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F344A8B)
     (at 123 76 258)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -3134,7 +3347,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9B20)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F344B4B)
     (at 118 55 258)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -3170,7 +3383,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9B0F)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F34490B)
     (at 117 35 258)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -3206,7 +3419,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9AFE)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F344B7B)
     (at 111 15 258)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -3242,7 +3455,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9AED)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F34487B)
     (at 105 71 258)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -3278,7 +3491,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9ADC)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F344B1B)
     (at 100 51 258)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -3314,7 +3527,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9ACB)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F34493B)
     (at 99 31 258)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -3350,7 +3563,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9ABA)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F3449FB)
     (at 93 11 258)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -3386,7 +3599,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9AA9)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F34484B)
     (at 81 88 258)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -3422,7 +3635,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9A98)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F3449CB)
     (at 86 68 258)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -3458,7 +3671,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9A87)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F344AEB)
     (at 81 47 258)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -3494,7 +3707,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9A76)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F34499B)
     (at 80 27 258)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -3530,7 +3743,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9A65)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F344A5B)
     (at 74 6 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -3566,7 +3779,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9A54)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F3448DB)
     (at 66 65 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -3602,7 +3815,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9A43)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F344A2B)
     (at 60 46 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -3638,7 +3851,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9A32)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F34496B)
     (at 61 27 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -3674,7 +3887,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9A21)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F344ABB)
     (at 55 8 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -3710,7 +3923,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9A10)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F34466B)
     (at 29 84 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -3746,7 +3959,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E99FF)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F34475B)
     (at 36 65 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -3782,7 +3995,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E99EE)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F344539)
     (at 34 46 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -3818,7 +4031,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E99DD)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F34463B)
     (at 36 27 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -3854,7 +4067,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E99CC)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F344569)
     (at 35 8 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -3890,7 +4103,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E99BB)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F34460B)
     (at 5 44 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -3926,7 +4139,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E99AA)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F344599)
     (at 9 25 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -3962,7 +4175,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9999)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F3446FB)
     (at 12 6 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -3998,7 +4211,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9988)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F344509)
     (at 152.54 80.73 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -4034,7 +4247,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9977)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F34478B)
     (at 156.83 87.5 180)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -4070,7 +4283,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9966)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F34481B)
     (at 145.54 30.91 180)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -4106,7 +4319,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9955)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F3447EB)
     (at 145.47 32.84 180)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -4142,7 +4355,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9944)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F3447BB)
     (at 162.36 84.01 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -4178,7 +4391,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9933)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F34472B)
     (at 157.03 -6.03)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -4214,7 +4427,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9922)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F3446CB)
     (at 161.67 -6.08 180)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -4250,7 +4463,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E9911)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F34469B)
     (at 165.82 -6.93 90)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -4286,7 +4499,7 @@
     )
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E98C7)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F3445CF)
     (at 319.24 59.29)
     (path /5F4680BD/5F4EE31C)
     (fp_text reference KBP4 (at 0 3.175) (layer Dwgs.User)
@@ -4320,7 +4533,7 @@
       (net 157 "/Switch + LED Matrix/colP"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E983D)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F3441F7)
     (at 282.22 21.19)
     (path /5F4680BD/5F4CD763)
     (fp_text reference KBO2 (at 0 3.175) (layer Dwgs.User)
@@ -4354,7 +4567,7 @@
       (net 77 "Net-(D34-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F312808)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F3443C5)
     (at 287.58 2.14)
     (path /5F4680BD/5F4712DF)
     (fp_text reference KBO1 (at 0 3.175) (layer Dwgs.User)
@@ -4388,7 +4601,7 @@
       (net 75 "Net-(D33-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E980F)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F344341)
     (at 266.85 59.29)
     (path /5F4680BD/5F4EE310)
     (fp_text reference KBN4 (at 0 3.175) (layer Dwgs.User)
@@ -4422,7 +4635,7 @@
       (net 150 "/Switch + LED Matrix/colN"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E97F8)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F344239)
     (at 272.21 40.24)
     (path /5F4680BD/5F4E4EF4)
     (fp_text reference KBN3 (at 0 3.175) (layer Dwgs.User)
@@ -4456,7 +4669,7 @@
       (net 150 "/Switch + LED Matrix/colN"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E97E1)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F344173)
     (at 263.17 21.19)
     (path /5F4680BD/5F4CD75D)
     (fp_text reference KBN2 (at 0 3.175) (layer Dwgs.User)
@@ -4490,7 +4703,7 @@
       (net 150 "/Switch + LED Matrix/colN"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E97CA)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F3441B5)
     (at 268.53 2.14)
     (path /5F4680BD/5F470875)
     (fp_text reference KBN1 (at 0 3.175) (layer Dwgs.User)
@@ -4524,7 +4737,7 @@
       (net 150 "/Switch + LED Matrix/colN"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E97B3)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F3444CD)
     (at 247.8 59.29)
     (path /5F4680BD/5F4EE30A)
     (fp_text reference KBM4 (at 0 3.175) (layer Dwgs.User)
@@ -4558,7 +4771,7 @@
       (net 73 "Net-(D32-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E979C)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F344383)
     (at 253.16 40.24)
     (path /5F4680BD/5F4E4EEE)
     (fp_text reference KBM3 (at 0 3.175) (layer Dwgs.User)
@@ -4592,7 +4805,7 @@
       (net 71 "Net-(D31-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E9785)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F344407)
     (at 244.54 20.13)
     (path /5F4680BD/5F4CD757)
     (fp_text reference KBM2 (at 0 3.175) (layer Dwgs.User)
@@ -4626,7 +4839,7 @@
       (net 69 "Net-(D30-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E976E)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F3442FF)
     (at 249.9 0)
     (path /5F4680BD/5F470157)
     (fp_text reference KBM1 (at 0 3.175) (layer Dwgs.User)
@@ -4660,7 +4873,7 @@
       (net 67 "Net-(D29-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E9740)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F34448B)
     (at 227.3 60.85 12)
     (path /5F4680BD/5F4EE304)
     (fp_text reference KBL4 (at 0 3.175 12) (layer Dwgs.User)
@@ -4694,7 +4907,7 @@
       (net 139 "/Switch + LED Matrix/colL"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E9729)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F344449)
     (at 232.66 40.24 12)
     (path /5F4680BD/5F4E4EE8)
     (fp_text reference KBL3 (at 0 3.175 12) (layer Dwgs.User)
@@ -4728,7 +4941,7 @@
       (net 139 "/Switch + LED Matrix/colL"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E9712)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F3442BD)
     (at 224.04 22.59 12)
     (path /5F4680BD/5F4CD751)
     (fp_text reference KBL2 (at 0 3.175 12) (layer Dwgs.User)
@@ -4762,7 +4975,7 @@
       (net 139 "/Switch + LED Matrix/colL"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E96FB)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F34427B)
     (at 229.4 1.98 12)
     (path /5F4680BD/5F46FB9F)
     (fp_text reference KBL1 (at 0 3.175 12) (layer Dwgs.User)
@@ -4796,7 +5009,7 @@
       (net 139 "/Switch + LED Matrix/colL"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E96E4)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F346108)
     (at 208.67 64.81 12)
     (path /5F4680BD/5F4EE2FE)
     (fp_text reference KBK4 (at 0 3.175 12) (layer Dwgs.User)
@@ -4830,7 +5043,7 @@
       (net 63 "Net-(D27-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E96CD)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F34639C)
     (at 214.03 44.2 12)
     (path /5F4680BD/5F4E4EE2)
     (fp_text reference KBK3 (at 0 3.175 12) (layer Dwgs.User)
@@ -4864,7 +5077,7 @@
       (net 61 "Net-(D26-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F30C1E8)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F346252)
     (at 205.41 26.55 12)
     (path /5F4680BD/5F4CD74B)
     (fp_text reference KBK2 (at 0 3.175 12) (layer Dwgs.User)
@@ -4898,7 +5111,7 @@
       (net 59 "Net-(D25-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E969F)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F346210)
     (at 210.77 5.94 12)
     (path /5F4680BD/5F46F48E)
     (fp_text reference KBK1 (at 0 3.175 12) (layer Dwgs.User)
@@ -4932,7 +5145,7 @@
       (net 57 "Net-(D24-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E9671)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F3461CE)
     (at 190.03 68.77 12)
     (path /5F4680BD/5F4EE2F8)
     (fp_text reference KBJ4 (at 0 3.175 12) (layer Dwgs.User)
@@ -4966,7 +5179,7 @@
       (net 128 "/Switch + LED Matrix/colJ"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F30C5B1)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F34614A)
     (at 195.39 48.16 12)
     (path /5F4680BD/5F4E4EDC)
     (fp_text reference KBJ3 (at 0 3.175 12) (layer Dwgs.User)
@@ -5000,7 +5213,7 @@
       (net 128 "/Switch + LED Matrix/colJ"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E9643)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F346294)
     (at 186.77 30.51 12)
     (path /5F4680BD/5F4CD745)
     (fp_text reference KBJ2 (at 0 3.175 12) (layer Dwgs.User)
@@ -5034,7 +5247,7 @@
       (net 128 "/Switch + LED Matrix/colJ"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E962C)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F3464E6)
     (at 192.13 9.9 12)
     (path /5F4680BD/5F46F055)
     (fp_text reference KBJ1 (at 0 3.175 12) (layer Dwgs.User)
@@ -5068,7 +5281,7 @@
       (net 128 "/Switch + LED Matrix/colJ"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E9615)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F3463DE)
     (at 171.4 72.73 12)
     (path /5F4680BD/5F4EE2F2)
     (fp_text reference KBI4 (at 0 3.175 12) (layer Dwgs.User)
@@ -5102,7 +5315,7 @@
       (net 55 "Net-(D23-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E95FE)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F34635A)
     (at 176.76 52.12 12)
     (path /5F4680BD/5F4E4ED6)
     (fp_text reference KBI3 (at 0 3.175 12) (layer Dwgs.User)
@@ -5136,7 +5349,7 @@
       (net 53 "Net-(D22-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E95E7)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F3464A4)
     (at 168.14 34.47 12)
     (path /5F4680BD/5F4CD73F)
     (fp_text reference KBI2 (at 0 3.175 12) (layer Dwgs.User)
@@ -5170,7 +5383,7 @@
       (net 51 "Net-(D21-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E95D0)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F346318)
     (at 173.5 13.86 12)
     (path /5F4680BD/5F46E9CE)
     (fp_text reference KBI1 (at 0 3.175 12) (layer Dwgs.User)
@@ -5204,7 +5417,7 @@
       (net 49 "Net-(D20-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E95B9)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F3462D6)
     (at 145.34 15.84 348)
     (path /5F4680BD/5F46E3E9)
     (fp_text reference KBH1 (at 0 3.175 168) (layer Dwgs.User)
@@ -5238,7 +5451,7 @@
       (net 47 "Net-(D19-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E958B)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F34618C)
     (at 138.11 72.73 348)
     (path /5F4680BD/5F4EE2E6)
     (fp_text reference KBG4 (at 0 3.175 168) (layer Dwgs.User)
@@ -5272,7 +5485,7 @@
       (net 116 "/Switch + LED Matrix/colG"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E9574)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F346462)
     (at 132.76 52.12 348)
     (path /5F4680BD/5F4E4ECA)
     (fp_text reference KBG3 (at 0 3.175 168) (layer Dwgs.User)
@@ -5306,7 +5519,7 @@
       (net 116 "/Switch + LED Matrix/colG"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E955D)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F346420)
     (at 132.06 32.49 348)
     (path /5F4680BD/5F4CD733)
     (fp_text reference KBG2 (at 0 3.175 168) (layer Dwgs.User)
@@ -5340,7 +5553,7 @@
       (net 116 "/Switch + LED Matrix/colG"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E9546)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F345FBE)
     (at 126.71 11.88 348)
     (path /5F4680BD/5F46DDE1)
     (fp_text reference KBG1 (at 0 3.175 168) (layer Dwgs.User)
@@ -5374,7 +5587,7 @@
       (net 116 "/Switch + LED Matrix/colG"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E9518)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F345EB6)
     (at 119.48 68.77 348)
     (path /5F4680BD/5F4EE2E0)
     (fp_text reference KBF4 (at 0 3.175 168) (layer Dwgs.User)
@@ -5408,7 +5621,7 @@
       (net 43 "Net-(D17-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E9501)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F345CE8)
     (at 114.13 48.16 348)
     (path /5F4680BD/5F4E4EC4)
     (fp_text reference KBF3 (at 0 3.175 168) (layer Dwgs.User)
@@ -5442,7 +5655,7 @@
       (net 41 "Net-(D16-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E94EA)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F345EF8)
     (at 113.43 28.53 348)
     (path /5F4680BD/5F4CD72D)
     (fp_text reference KBF2 (at 0 3.175 168) (layer Dwgs.User)
@@ -5476,7 +5689,7 @@
       (net 39 "Net-(D15-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E94D3)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F346084)
     (at 108.07 7.92 348)
     (path /5F4680BD/5F46D84E)
     (fp_text reference KBF1 (at 0 3.175 168) (layer Dwgs.User)
@@ -5510,7 +5723,7 @@
       (net 37 "Net-(D14-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E94BC)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F345D2A)
     (at 100.84 64.81 348)
     (path /5F4680BD/5F4EE2DA)
     (fp_text reference KBE4 (at 0 3.175 168) (layer Dwgs.User)
@@ -5544,7 +5757,7 @@
       (net 106 "/Switch + LED Matrix/colE"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E94A5)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F345E74)
     (at 95.49 44.2 348)
     (path /5F4680BD/5F4E4EBE)
     (fp_text reference KBE3 (at 0 3.175 168) (layer Dwgs.User)
@@ -5578,7 +5791,7 @@
       (net 106 "/Switch + LED Matrix/colE"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E948E)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F3460C6)
     (at 94.79 24.57 348)
     (path /5F4680BD/5F4CD727)
     (fp_text reference KBE2 (at 0 3.175 168) (layer Dwgs.User)
@@ -5612,7 +5825,7 @@
       (net 106 "/Switch + LED Matrix/colE"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E9477)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F345F7C)
     (at 89.44 3.96 348)
     (path /5F4680BD/5F46D283)
     (fp_text reference KBE1 (at 0 3.175 168) (layer Dwgs.User)
@@ -5646,7 +5859,7 @@
       (net 106 "/Switch + LED Matrix/colE"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E9449)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F346042)
     (at 82.21 60.85 348)
     (path /5F4680BD/5F4EE2D4)
     (fp_text reference KBD4 (at 0 3.175 168) (layer Dwgs.User)
@@ -5680,7 +5893,7 @@
       (net 35 "Net-(D13-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E9432)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F345DF0)
     (at 76.86 40.24 348)
     (path /5F4680BD/5F4E4EB8)
     (fp_text reference KBD3 (at 0 3.175 168) (layer Dwgs.User)
@@ -5714,7 +5927,7 @@
       (net 33 "Net-(D12-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E941B)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F346000)
     (at 76.16 20.61 348)
     (path /5F4680BD/5F4CD721)
     (fp_text reference KBD2 (at 0 3.175 168) (layer Dwgs.User)
@@ -5748,7 +5961,7 @@
       (net 31 "Net-(D11-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E9404)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F345F3A)
     (at 68.94 0)
     (path /5F4680BD/5F46C8B9)
     (fp_text reference KBD1 (at 0 3.175) (layer Dwgs.User)
@@ -5782,7 +5995,7 @@
       (net 29 "Net-(D10-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E93ED)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F345E32)
     (at 61.71 59.29)
     (path /5F4680BD/5F4EE2CE)
     (fp_text reference KBC4 (at 0 3.175) (layer Dwgs.User)
@@ -5816,7 +6029,7 @@
       (net 95 "/Switch + LED Matrix/colC"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E93D6)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F345DAE)
     (at 56.36 40.24)
     (path /5F4680BD/5F4E4EB2)
     (fp_text reference KBC3 (at 0 3.175) (layer Dwgs.User)
@@ -5850,7 +6063,7 @@
       (net 95 "/Switch + LED Matrix/colC"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E93BF)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F345D6C)
     (at 55.66 21.19)
     (path /5F4680BD/5F4CD71B)
     (fp_text reference KBC2 (at 0 3.175) (layer Dwgs.User)
@@ -5884,7 +6097,7 @@
       (net 95 "/Switch + LED Matrix/colC"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E93A8)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F345598)
     (at 50.3 2.14)
     (path /5F4680BD/5F46C002)
     (fp_text reference KBC1 (at 0 3.175) (layer Dwgs.User)
@@ -5918,7 +6131,7 @@
       (net 95 "/Switch + LED Matrix/colC"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E9335)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F345556)
     (at 31.25 2.14)
     (path /5F4680BD/5F46B6C4)
     (fp_text reference KBB1 (at 0 3.175) (layer Dwgs.User)
@@ -5952,7 +6165,7 @@
       (net 17 "Net-(D5-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E931E)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F345A18)
     (at 0 38.1)
     (path /5F4680BD/5F4E4EA6)
     (fp_text reference KBA3 (at 0 3.175) (layer Dwgs.User)
@@ -5986,7 +6199,7 @@
       (net 15 "Net-(D4-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E9307)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F345B7A)
     (at 4.07 19.05)
     (path /5F4680BD/5F4CD70F)
     (fp_text reference KBA2 (at 0 3.175) (layer Dwgs.User)
@@ -6020,7 +6233,7 @@
       (net 12 "Net-(D3-Pad1)"))
   )
 
-  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F2E92F0)
+  (module MX_Only:MXOnly-1U (layer F.Cu) (tedit 5AC9901D) (tstamp 5F34568E)
     (at 8.23 0)
     (path /5F4680BD/5F468631)
     (fp_text reference KBA1 (at 0 3.175) (layer Dwgs.User)
@@ -6054,7 +6267,7 @@
       (net 9 "Net-(D2-Pad1)"))
   )
 
-  (module keeb_parts:Fuse_1206_3216Metric (layer B.Cu) (tedit 5B301BBE) (tstamp 5F2E92D9)
+  (module keeb_parts:Fuse_1206_3216Metric (layer B.Cu) (tedit 5B301BBE) (tstamp 5F345B44)
     (at 157.42 -1.2 90)
     (descr "Fuse SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -6090,7 +6303,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E92C8)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F345836)
     (at 300.14 74.79 270)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -6131,7 +6344,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E92B3)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F345518)
     (at 310.59 55.78 270)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -6172,7 +6385,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E929E)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F345B0C)
     (at 291.77 38.93 270)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -6213,7 +6426,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E9289)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F345AD0)
     (at 294.39 18.65 270)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -6254,7 +6467,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E9274)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F345A94)
     (at 294.82 -4.77 270)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -6295,7 +6508,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E925F)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F345A58)
     (at 257.59 54.66 270)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -6336,7 +6549,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E924A)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F34599E)
     (at 261.59 36.36 270)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -6377,7 +6590,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E9235)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F345BF6)
     (at 253.9 15.89 270)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -6418,7 +6631,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E9220)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F3459DA)
     (at 259.51 -2.23 270)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -6459,7 +6672,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E920B)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F345872)
     (at 211.26 82.07 282)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -6500,7 +6713,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E91F6)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F345BBA)
     (at 217.3 59.9 282)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -6541,7 +6754,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E91E1)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F3454DC)
     (at 222.22 38.93 282)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -6582,7 +6795,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E91CC)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F345962)
     (at 214.04 22.02 282)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -6623,7 +6836,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E91B7)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F345926)
     (at 219.16 0.41 282)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -6664,7 +6877,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E91A2)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F345CAA)
     (at 179.65 67.01 282)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -6705,7 +6918,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E918D)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F3454A0)
     (at 185.05 47 282)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -6746,7 +6959,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E9178)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F3458AE)
     (at 176.57 29.52 282)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -6787,7 +7000,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E9163)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F345C6E)
     (at 182.28 7.94 282)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -6828,7 +7041,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E914E)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F345650)
     (at 157.97 13.16 270)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -6869,7 +7082,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E9139)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F3456CE)
     (at 127.53 85.31 258)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -6910,7 +7123,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E9124)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F3458EA)
     (at 129.66 65.77 258)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -6951,7 +7164,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E910F)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F345C32)
     (at 124.54 46.79 258)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -6992,7 +7205,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E90FA)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F3457FA)
     (at 123.47 27.39 258)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -7033,7 +7246,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E90E5)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F345614)
     (at 118.13 6.7 258)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -7074,7 +7287,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E90D0)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F34570A)
     (at 92.56 59.5 258)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -7115,7 +7328,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E90BB)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F3457BE)
     (at 87.22 38.39 258)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -7156,7 +7369,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E90A6)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F345782)
     (at 86.64 17.49 258)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -7197,7 +7410,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E9091)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F345746)
     (at 79.66 0 258)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -7238,7 +7451,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E907C)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F3455D8)
     (at 65 74.24 258)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -7279,7 +7492,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E9067)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F3453BC)
     (at 49.33 55.8 270)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -7320,7 +7533,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E9052)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F3452C0)
     (at 44.2 37.46 270)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -7361,7 +7574,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E903D)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F345074)
     (at 43.86 16.84 270)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -7402,7 +7615,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E9028)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F345464)
     (at 40.23 -1.15 270)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -7443,7 +7656,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E9013)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F345110)
     (at 10.73 34.43 270)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -7484,7 +7697,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E8FFE)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F345428)
     (at 16.13 15.71 270)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -7525,7 +7738,7 @@
     )
   )
 
-  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F2E8FE9)
+  (module keeb_parts:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5F3451DC)
     (at 19.7 -2.48 270)
     (descr "SOT-23, Standard")
     (tags SOT-23)
@@ -7566,7 +7779,7 @@
     )
   )
 
-  (module keeb_parts:D_SOD-123 (layer B.Cu) (tedit 58645DC7) (tstamp 5F2E8FD4)
+  (module keeb_parts:D_SOD-123 (layer B.Cu) (tedit 58645DC7) (tstamp 5F34527C)
     (at 155.07 -1.38 90)
     (descr SOD-123)
     (tags SOD-123)
@@ -7610,7 +7823,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E8FBB)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F345178)
     (at 153.47 84.25 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -7646,7 +7859,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E8FAA)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F3450DC)
     (at 160.71 83.99 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -7682,7 +7895,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E8F99)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F345388)
     (at 151.67 5.66 180)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -7718,7 +7931,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F3212E1)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F345244)
     (at 154.34 2.93 90)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -7754,7 +7967,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E8F77)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F3452F8)
     (at 143.72 42.29 90)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -7790,7 +8003,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F325912)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F345214)
     (at 164.24 -6.93 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -7826,7 +8039,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E8F55)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F345148)
     (at 156 37.05)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -7862,7 +8075,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E8F44)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F3453F4)
     (at 160.05 48.69 270)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -7898,7 +8111,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E8F33)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F3450AC)
     (at 151.2 55.2 180)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -7934,7 +8147,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E8F22)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F345328)
     (at 156.01 38.78)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -7970,7 +8183,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E8F11)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F3451A8)
     (at 145.61 42.32 90)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -8006,7 +8219,7 @@
     )
   )
 
-  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F2E8F00)
+  (module keeb_parts:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5F345358)
     (at 151.2 53.49 180)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
@@ -8042,20 +8255,20 @@
     )
   )
 
-  (gr_line (start 154.59 -15.17) (end 164.15 -15.17) (layer Edge.Cuts) (width 0.05) (tstamp 5F30B887))
-  (gr_line (start 164.15 -9) (end 164.15 -15.17) (layer Edge.Cuts) (width 0.05))
-  (gr_line (start 154.59 -9) (end 154.59 -15.17) (layer Edge.Cuts) (width 0.05))
-  (gr_line (start 327.24 -9) (end 164.15 -9) (layer Edge.Cuts) (width 0.05))
-  (gr_arc (start 327.24 -8) (end 328.24 -8) (angle -90) (layer Edge.Cuts) (width 0.05) (tstamp 5F30B87B))
-  (gr_line (start 328.24 -8) (end 328.24 86.34) (layer Edge.Cuts) (width 0.05) (tstamp 5F30B878))
-  (gr_arc (start 327.24 86.34) (end 327.24 87.34) (angle -90) (layer Edge.Cuts) (width 0.05) (tstamp 5F30B874))
-  (gr_line (start 254.05 87.34) (end 327.24 87.34) (layer Edge.Cuts) (width 0.05))
-  (gr_line (start 159.37 107.46) (end 254.05 87.34) (layer Edge.Cuts) (width 0.05))
-  (gr_line (start 64.69 87.34) (end 159.37 107.46) (layer Edge.Cuts) (width 0.05))
-  (gr_line (start -8 87.34) (end 64.69 87.34) (layer Edge.Cuts) (width 0.05))
-  (gr_arc (start -8 86.34) (end -9 86.34) (angle -90) (layer Edge.Cuts) (width 0.05) (tstamp 5F30AC13))
-  (gr_line (start -9 -8) (end -9 86.34) (layer Edge.Cuts) (width 0.05))
-  (gr_line (start -8 -9) (end 154.59 -9) (layer Edge.Cuts) (width 0.05))
-  (gr_arc (start -8 -8) (end -8 -9) (angle -90) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 154.59 -15.17) (end 164.15 -15.17) (layer Edge.Cuts) (width 0.05) (tstamp 5F346525))
+  (gr_line (start 164.15 -9) (end 164.15 -15.17) (layer Edge.Cuts) (width 0.05) (tstamp 5F346534))
+  (gr_line (start 154.59 -9) (end 154.59 -15.17) (layer Edge.Cuts) (width 0.05) (tstamp 5F346528))
+  (gr_line (start 327.24 -9) (end 164.15 -9) (layer Edge.Cuts) (width 0.05) (tstamp 5F34652B))
+  (gr_arc (start 327.24 -8) (end 328.24 -8) (angle -90) (layer Edge.Cuts) (width 0.05) (tstamp 5F346531))
+  (gr_line (start 328.24 -8) (end 328.24 86.34) (layer Edge.Cuts) (width 0.05) (tstamp 5F346522))
+  (gr_arc (start 327.24 86.34) (end 327.24 87.34) (angle -90) (layer Edge.Cuts) (width 0.05) (tstamp 5F34651F))
+  (gr_line (start 254.05 87.34) (end 327.24 87.34) (layer Edge.Cuts) (width 0.05) (tstamp 5F346537))
+  (gr_line (start 159.37 107.46) (end 254.05 87.34) (layer Edge.Cuts) (width 0.05) (tstamp 5F34652E))
+  (gr_line (start 64.69 87.34) (end 159.37 107.46) (layer Edge.Cuts) (width 0.05) (tstamp 5F34651C))
+  (gr_line (start -8 87.34) (end 64.69 87.34) (layer Edge.Cuts) (width 0.05) (tstamp 5F34653A))
+  (gr_arc (start -8 86.34) (end -9 86.34) (angle -90) (layer Edge.Cuts) (width 0.05) (tstamp 5F34653D))
+  (gr_line (start -9 -8) (end -9 86.34) (layer Edge.Cuts) (width 0.05) (tstamp 5F346519))
+  (gr_line (start -8 -9) (end 154.59 -9) (layer Edge.Cuts) (width 0.05) (tstamp 5F346516))
+  (gr_arc (start -8 -8) (end -8 -9) (angle -90) (layer Edge.Cuts) (width 0.05) (tstamp 5F346513))
 
 )

@@ -1,4 +1,4 @@
-214906107394207
+216471557383563
 MX_Only
 MXOnly-1.5U
 
@@ -748,6 +748,13 @@ USB_C_GCT_USB4085
 0
 20
 17
+keeb_lighting
+LED_D3.0mm
+LED, diameter 3.0mm, 2 pins
+LED diameter 3.0mm 2 pins
+0
+2
+2
 keeb_mcu
 ArduinoProMicro
 
