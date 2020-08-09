@@ -16,6 +16,10 @@ The Cordillera PCB is an open design PCB heavily based on the Alice PCB. The onl
 - Fancy "press to reset, hold for bootloader" reset circuit
 - Unused pins are broken out
 
+## Dependencies
+
+Symbols and footprints used are from my [KiCad library](https://github.com/coarse/KiCad-Keeb-Lib)
+
 ## Notes
 
 - Due to the design having the USB C connector mounted at the bottom, the design cannot be used on most Alice cases.
