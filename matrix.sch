@@ -367,7 +367,7 @@ F 1 "BAV70" H 2400 7975 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 2400 7850 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 2400 7850 50  0001 C CNN
 	1    2400 7850
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2300 7550 2300 7650
@@ -546,7 +546,7 @@ F 1 "BAV70" H 2400 8925 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 2400 8800 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 2400 8800 50  0001 C CNN
 	1    2400 8800
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2300 8500 2300 8600
@@ -725,7 +725,7 @@ F 1 "BAV70" H 2400 9875 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 2400 9750 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 2400 9750 50  0001 C CNN
 	1    2400 9750
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2300 9450 2300 9550
@@ -883,7 +883,7 @@ F 1 "BAV70" H 3600 9875 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 3600 9750 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 3600 9750 50  0001 C CNN
 	1    3600 9750
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3500 9450 3500 9550
@@ -906,7 +906,7 @@ F 1 "BAV70" H 3600 8925 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 3600 8800 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 3600 8800 50  0001 C CNN
 	1    3600 8800
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3500 8500 3500 8600
@@ -929,7 +929,7 @@ F 1 "BAV70" H 3600 7975 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 3600 7850 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 3600 7850 50  0001 C CNN
 	1    3600 7850
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3500 7550 3500 7650
@@ -974,7 +974,7 @@ F 1 "BAV70" H 4800 7975 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 4800 7850 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 4800 7850 50  0001 C CNN
 	1    4800 7850
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4700 7550 4700 7650
@@ -997,7 +997,7 @@ F 1 "BAV70" H 4800 8925 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 4800 8800 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 4800 8800 50  0001 C CNN
 	1    4800 8800
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4700 8500 4700 8600
@@ -1020,7 +1020,7 @@ F 1 "BAV70" H 4800 9875 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 4800 9750 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 4800 9750 50  0001 C CNN
 	1    4800 9750
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4700 9450 4700 9550
@@ -1066,7 +1066,7 @@ F 1 "BAV70" H 6900 7025 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 6900 6900 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 6900 6900 50  0001 C CNN
 	1    6900 6900
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6800 6600 6800 6700
@@ -1089,7 +1089,7 @@ F 1 "BAV70" H 6900 7975 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 6900 7850 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 6900 7850 50  0001 C CNN
 	1    6900 7850
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6800 7550 6800 7650
@@ -1112,7 +1112,7 @@ F 1 "BAV70" H 6900 8925 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 6900 8800 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 6900 8800 50  0001 C CNN
 	1    6900 8800
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6800 8500 6800 8600
@@ -1135,7 +1135,7 @@ F 1 "BAV70" H 6900 9875 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 6900 9750 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 6900 9750 50  0001 C CNN
 	1    6900 9750
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6800 9450 6800 9550
@@ -1160,7 +1160,7 @@ F 1 "BAV70" H 8100 7025 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 8100 6900 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 8100 6900 50  0001 C CNN
 	1    8100 6900
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	8000 6600 8000 6700
@@ -1183,7 +1183,7 @@ F 1 "BAV70" H 8100 7975 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 8100 7850 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 8100 7850 50  0001 C CNN
 	1    8100 7850
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	8000 7550 8000 7650
@@ -1206,7 +1206,7 @@ F 1 "BAV70" H 8100 8925 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 8100 8800 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 8100 8800 50  0001 C CNN
 	1    8100 8800
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	8000 8500 8000 8600
@@ -1229,7 +1229,7 @@ F 1 "BAV70" H 8100 9875 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 8100 9750 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 8100 9750 50  0001 C CNN
 	1    8100 9750
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	8000 9450 8000 9550
@@ -1269,7 +1269,7 @@ F 1 "BAV70" H 9300 7025 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 9300 6900 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 9300 6900 50  0001 C CNN
 	1    9300 6900
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	9200 6600 9200 6700
@@ -1292,7 +1292,7 @@ F 1 "BAV70" H 9300 7975 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 9300 7850 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 9300 7850 50  0001 C CNN
 	1    9300 7850
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	9200 7550 9200 7650
@@ -1315,7 +1315,7 @@ F 1 "BAV70" H 9300 8925 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 9300 8800 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 9300 8800 50  0001 C CNN
 	1    9300 8800
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	9200 8500 9200 8600
@@ -1338,7 +1338,7 @@ F 1 "BAV70" H 9300 9875 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 9300 9750 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 9300 9750 50  0001 C CNN
 	1    9300 9750
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	9200 9450 9200 9550
@@ -1352,17 +1352,6 @@ Wire Wire Line
 	9600 9550 9400 9550
 Wire Wire Line
 	9400 9550 9400 9450
-$Comp
-L keeb_chips:BAV70 D33
-U 1 1 5F591458
-P 10500 6900
-F 0 "D33" H 10500 7116 50  0000 C CNN
-F 1 "BAV70" H 10500 7025 50  0000 C CNN
-F 2 "keeb_parts:SOT-23" H 10500 6900 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 10500 6900 50  0001 C CNN
-	1    10500 6900
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	10400 6600 10400 6700
 Wire Wire Line
@@ -1384,7 +1373,7 @@ F 1 "BAV70" H 10500 7975 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 10500 7850 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 10500 7850 50  0001 C CNN
 	1    10500 7850
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	10400 7550 10400 7650
@@ -1424,7 +1413,7 @@ F 1 "BAV70" H 10500 9875 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 10500 9750 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 10500 9750 50  0001 C CNN
 	1    10500 9750
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	10400 9450 10400 9550
@@ -3286,7 +3275,7 @@ F 1 "470" H 12459 1505 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 12400 1550 50  0001 C CNN
 F 3 "~" H 12400 1550 50  0001 C CNN
 	1    12400 1550
-	1    0    0    1   
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	12400 1450 12400 1350
@@ -3370,7 +3359,7 @@ F 1 "470" H 13259 1505 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 13200 1550 50  0001 C CNN
 F 3 "~" H 13200 1550 50  0001 C CNN
 	1    13200 1550
-	1    0    0    1   
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	13200 1450 13200 1350
@@ -4342,7 +4331,7 @@ F 1 "BAV70" H 5900 7125 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 5900 7000 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 5900 7000 50  0001 C CNN
 	1    5900 7000
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 $Comp
 L keeb_chips:BAV70 D14
@@ -4353,7 +4342,7 @@ F 1 "BAV70" H 4800 7025 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 4800 6900 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 4800 6900 50  0001 C CNN
 	1    4800 6900
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 $Comp
 L keeb_chips:BAV70 D10
@@ -4364,7 +4353,7 @@ F 1 "BAV70" H 3600 7025 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 3600 6900 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 3600 6900 50  0001 C CNN
 	1    3600 6900
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 $Comp
 L keeb_chips:BAV70 D5
@@ -4375,7 +4364,7 @@ F 1 "BAV70" H 2400 7025 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 2400 6900 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 2400 6900 50  0001 C CNN
 	1    2400 6900
-	-1   0    0    -1  
+	1    0    0    -1  
 $EndComp
 $Comp
 L keeb_chips:BAV70 D2
@@ -4405,5 +4394,16 @@ F 2 "MX_Only:MXOnly-1U" H 3900 6605 50  0001 C CNN
 F 3 "" H 3900 6605 50  0001 C CNN
 	1    3900 6600
 	-1   0    0    -1  
+$EndComp
+$Comp
+L keeb_chips:BAV70 D33
+U 1 1 5F591458
+P 10500 6900
+F 0 "D33" H 10500 7116 50  0000 C CNN
+F 1 "BAV70" H 10500 7025 50  0000 C CNN
+F 2 "keeb_parts:SOT-23" H 10500 6900 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 10500 6900 50  0001 C CNN
+	1    10500 6900
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
