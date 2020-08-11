@@ -1098,18 +1098,6 @@ Wire Wire Line
 Wire Wire Line
 	7700 3050 7300 3050
 Wire Wire Line
-	7700 3250 7300 3250
-Wire Wire Line
-	7700 3350 7300 3350
-Wire Wire Line
-	7700 3450 7300 3450
-Wire Wire Line
-	7700 3550 7300 3550
-Wire Wire Line
-	7700 3650 7300 3650
-Wire Wire Line
-	7700 3750 7300 3750
-Wire Wire Line
 	7700 3850 7300 3850
 Wire Wire Line
 	7700 3950 7300 3950
@@ -1343,14 +1331,6 @@ Text Label 7300 4150 0    50   ~ 0
 B7
 Text Label 7300 4050 0    50   ~ 0
 B8
-Wire Bus Line
-	7200 2550 7200 5150
-Wire Bus Line
-	6550 950  6550 2350
-Wire Bus Line
-	4950 950  4950 5550
-Wire Bus Line
-	2650 950  2650 5550
 $Comp
 L keeb_parts:R_Small R2
 U 1 1 5F3187E0
@@ -1362,4 +1342,62 @@ F 3 "~" H 2050 1600 50  0001 C CNN
 	1    2050 1600
 	0    -1   1    0   
 $EndComp
+Text Label 2750 4750 0    50   ~ 0
+B9
+Text Label 7300 2750 0    50   ~ 0
+B9
+Text Label 7300 2650 0    50   ~ 0
+SWDIO
+Text Label 4850 4750 2    50   ~ 0
+A9
+Text Label 7300 3950 0    50   ~ 0
+A9
+Text Label 2750 5050 0    50   ~ 0
+B12
+Text Label 2750 5150 0    50   ~ 0
+B13
+Text Label 2750 5250 0    50   ~ 0
+B14
+Text Label 2750 5350 0    50   ~ 0
+B15
+Wire Wire Line
+	7700 3550 7300 3550
+Wire Wire Line
+	7700 3450 7300 3450
+Wire Wire Line
+	7700 3350 7300 3350
+Wire Wire Line
+	7700 3250 7300 3250
+Text Label 7300 3550 0    50   ~ 0
+B12
+Text Label 7300 3450 0    50   ~ 0
+B13
+Text Label 7300 3350 0    50   ~ 0
+B14
+Text Label 7300 3250 0    50   ~ 0
+B15
+Text Label 2750 4950 0    50   ~ 0
+B11
+Text Label 2750 4850 0    50   ~ 0
+B10
+Wire Wire Line
+	7700 3750 7300 3750
+Wire Wire Line
+	7700 3650 7300 3650
+Text Label 7300 3650 0    50   ~ 0
+B11
+Text Label 7300 3750 0    50   ~ 0
+B10
+Wire Bus Line
+	6550 950  6550 2350
+Wire Bus Line
+	7200 2550 7200 5150
+Wire Bus Line
+	4950 950  4950 5550
+Wire Bus Line
+	2650 950  2650 5550
+Text Label 2750 4050 0    50   ~ 0
+B2
+Text Label 7300 3850 0    50   ~ 0
+B2
 $EndSCHEMATC
