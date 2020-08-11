@@ -88,17 +88,6 @@ Wire Wire Line
 Wire Wire Line
 	1450 1600 1950 1600
 $Comp
-L keeb_parts:R_Small R2
-U 1 1 5F3187E0
-P 2050 1600
-F 0 "R2" V 1854 1600 50  0000 C CNN
-F 1 "5.1k" V 1945 1600 50  0000 C CNN
-F 2 "keeb_parts:R_0603_1608Metric" H 2050 1600 50  0001 C CNN
-F 3 "~" H 2050 1600 50  0001 C CNN
-	1    2050 1600
-	0    1    1    0   
-$EndComp
-$Comp
 L keeb_parts:R_Small R3
 U 1 1 5F318F68
 P 2050 2200
@@ -1320,12 +1309,57 @@ F 3 "" H 7650 1950 50  0001 C CNN
 	1    7650 1950
 	1    0    0    -1  
 $EndComp
-Wire Bus Line
-	6550 950  6550 2350
+Text Label 2750 4550 0    50   ~ 0
+B7
+Text Label 2750 4450 0    50   ~ 0
+B6
+Text Label 2750 4350 0    50   ~ 0
+B5
+Text Label 2750 4250 0    50   ~ 0
+B4
+Text Label 2750 4150 0    50   ~ 0
+B3
+Text Label 4850 5350 2    50   ~ 0
+A15
+Text Label 4850 5250 2    50   ~ 0
+SWDCLK
+Text Label 4850 5150 2    50   ~ 0
+SWDIO
+Text Label 2750 4650 0    50   ~ 0
+B8
+Text Label 7300 4750 0    50   ~ 0
+SWDCLK
+Text Label 7300 4650 0    50   ~ 0
+A15
+Text Label 7300 4550 0    50   ~ 0
+B3
+Text Label 7300 4450 0    50   ~ 0
+B4
+Text Label 7300 4350 0    50   ~ 0
+B5
+Text Label 7300 4250 0    50   ~ 0
+B6
+Text Label 7300 4150 0    50   ~ 0
+B7
+Text Label 7300 4050 0    50   ~ 0
+B8
 Wire Bus Line
 	7200 2550 7200 5150
+Wire Bus Line
+	6550 950  6550 2350
 Wire Bus Line
 	4950 950  4950 5550
 Wire Bus Line
 	2650 950  2650 5550
+$Comp
+L keeb_parts:R_Small R2
+U 1 1 5F3187E0
+P 2050 1600
+F 0 "R2" V 1854 1600 50  0000 C CNN
+F 1 "5.1k" V 1945 1600 50  0000 C CNN
+F 2 "keeb_parts:R_0603_1608Metric" H 2050 1600 50  0001 C CNN
+F 3 "~" H 2050 1600 50  0001 C CNN
+	1    2050 1600
+	0    -1   1    0   
+$EndComp
 $EndSCHEMATC

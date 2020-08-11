@@ -4331,7 +4331,7 @@ F 1 "BAV70" H 5900 7125 50  0000 C CNN
 F 2 "keeb_parts:SOT-23" H 5900 7000 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf" H 5900 7000 50  0001 C CNN
 	1    5900 7000
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
 L keeb_chips:BAV70 D14
