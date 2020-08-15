@@ -2,7 +2,7 @@
 
 ![Creative Commons License](https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png)
 
-![PCB Render](https://i.imgur.com/hVjAyWj.png)
+![PCB Render](https://i.imgur.com/AE0u5zm.png)
 
 ## About
 
