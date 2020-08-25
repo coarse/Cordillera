@@ -57,18 +57,16 @@ Wire Wire Line
 Connection ~ 1750 1400
 Wire Wire Line
 	1650 2400 1750 2400
-Wire Wire Line
-	1750 2400 1750 2600
 Connection ~ 1650 2400
 $Comp
 L keeb_power:GND #PWR04
 U 1 1 5F317A7C
-P 1750 2600
-F 0 "#PWR04" H 1750 2350 50  0001 C CNN
-F 1 "GND" H 1755 2427 50  0000 C CNN
-F 2 "" H 1750 2600 50  0001 C CNN
-F 3 "" H 1750 2600 50  0001 C CNN
-	1    1750 2600
+P 1750 2400
+F 0 "#PWR04" H 1750 2150 50  0001 C CNN
+F 1 "GND" H 1755 2227 50  0000 C CNN
+F 2 "" H 1750 2400 50  0001 C CNN
+F 3 "" H 1750 2400 50  0001 C CNN
+	1    1750 2400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -184,7 +182,7 @@ U 1 1 5F3275AE
 P 3800 1650
 F 0 "C9" H 3709 1604 50  0000 R CNN
 F 1 "1u" H 3709 1695 50  0000 R CNN
-F 2 "keeb_parts:R_0603_1608Metric" H 3800 1650 50  0001 C CNN
+F 2 "keeb_parts:C_0603_1608Metric" H 3800 1650 50  0001 C CNN
 F 3 "~" H 3800 1650 50  0001 C CNN
 	1    3800 1650
 	1    0    0    1   
@@ -212,7 +210,7 @@ U 1 1 5F332FEF
 P 4600 1650
 F 0 "C10" H 4508 1604 50  0000 R CNN
 F 1 "1u" H 4508 1695 50  0000 R CNN
-F 2 "keeb_parts:R_0603_1608Metric" H 4600 1650 50  0001 C CNN
+F 2 "keeb_parts:C_0603_1608Metric" H 4600 1650 50  0001 C CNN
 F 3 "~" H 4600 1650 50  0001 C CNN
 	1    4600 1650
 	-1   0    0    1   
@@ -372,7 +370,7 @@ U 1 1 5F372E01
 P 1200 4400
 F 0 "C1" H 1108 4354 50  0000 R CNN
 F 1 "10n" H 1108 4445 50  0000 R CNN
-F 2 "keeb_parts:R_0603_1608Metric" H 1200 4400 50  0001 C CNN
+F 2 "keeb_parts:C_0603_1608Metric" H 1200 4400 50  0001 C CNN
 F 3 "~" H 1200 4400 50  0001 C CNN
 	1    1200 4400
 	-1   0    0    1   
@@ -383,7 +381,7 @@ U 1 1 5F37322B
 P 1600 4400
 F 0 "C4" H 1508 4354 50  0000 R CNN
 F 1 "1u" H 1508 4445 50  0000 R CNN
-F 2 "keeb_parts:R_0603_1608Metric" H 1600 4400 50  0001 C CNN
+F 2 "keeb_parts:C_0603_1608Metric" H 1600 4400 50  0001 C CNN
 F 3 "~" H 1600 4400 50  0001 C CNN
 	1    1600 4400
 	-1   0    0    1   
@@ -394,7 +392,7 @@ U 1 1 5F373766
 P 1200 4900
 F 0 "C2" H 1108 4854 50  0000 R CNN
 F 1 "100n" H 1108 4945 50  0000 R CNN
-F 2 "keeb_parts:R_0603_1608Metric" H 1200 4900 50  0001 C CNN
+F 2 "keeb_parts:C_0603_1608Metric" H 1200 4900 50  0001 C CNN
 F 3 "~" H 1200 4900 50  0001 C CNN
 	1    1200 4900
 	-1   0    0    1   
@@ -405,7 +403,7 @@ U 1 1 5F373FF8
 P 1600 4900
 F 0 "C5" H 1508 4854 50  0000 R CNN
 F 1 "100n" H 1508 4945 50  0000 R CNN
-F 2 "keeb_parts:R_0603_1608Metric" H 1600 4900 50  0001 C CNN
+F 2 "keeb_parts:C_0603_1608Metric" H 1600 4900 50  0001 C CNN
 F 3 "~" H 1600 4900 50  0001 C CNN
 	1    1600 4900
 	-1   0    0    1   
@@ -416,7 +414,7 @@ U 1 1 5F374244
 P 2000 4900
 F 0 "C8" H 1908 4854 50  0000 R CNN
 F 1 "4.7u" H 1908 4945 50  0000 R CNN
-F 2 "keeb_parts:R_0603_1608Metric" H 2000 4900 50  0001 C CNN
+F 2 "keeb_parts:C_0603_1608Metric" H 2000 4900 50  0001 C CNN
 F 3 "~" H 2000 4900 50  0001 C CNN
 	1    2000 4900
 	-1   0    0    1   
@@ -427,7 +425,7 @@ U 1 1 5F375375
 P 1200 5400
 F 0 "C3" H 1108 5354 50  0000 R CNN
 F 1 "100n" H 1108 5445 50  0000 R CNN
-F 2 "keeb_parts:R_0603_1608Metric" H 1200 5400 50  0001 C CNN
+F 2 "keeb_parts:C_0603_1608Metric" H 1200 5400 50  0001 C CNN
 F 3 "~" H 1200 5400 50  0001 C CNN
 	1    1200 5400
 	-1   0    0    1   
@@ -438,7 +436,7 @@ U 1 1 5F37537B
 P 1600 5400
 F 0 "C6" H 1508 5354 50  0000 R CNN
 F 1 "4.7u" H 1508 5445 50  0000 R CNN
-F 2 "keeb_parts:R_0603_1608Metric" H 1600 5400 50  0001 C CNN
+F 2 "keeb_parts:C_0603_1608Metric" H 1600 5400 50  0001 C CNN
 F 3 "~" H 1600 5400 50  0001 C CNN
 	1    1600 5400
 	-1   0    0    1   
@@ -710,39 +708,32 @@ Entry Wire Line
 $Comp
 L keeb_parts:R_Small R1
 U 1 1 5F31BA41
-P 1450 3000
-F 0 "R1" H 1392 2954 50  0000 R CNN
-F 1 "1M" H 1392 3045 50  0000 R CNN
-F 2 "keeb_parts:R_0603_1608Metric" H 1450 3000 50  0001 C CNN
-F 3 "~" H 1450 3000 50  0001 C CNN
-	1    1450 3000
+P 800 2850
+F 0 "R1" H 742 2804 50  0000 R CNN
+F 1 "1M" H 742 2895 50  0000 R CNN
+F 2 "keeb_parts:R_0603_1608Metric" H 800 2850 50  0001 C CNN
+F 3 "~" H 800 2850 50  0001 C CNN
+	1    800  2850
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	1450 2900 1550 2900
+	800  2950 900  2950
 Wire Wire Line
-	1450 3100 1550 3100
-Connection ~ 1550 2900
+	900  2950 900  3050
+Connection ~ 900  2950
 Wire Wire Line
-	1550 2900 1650 2900
-Wire Wire Line
-	1550 3100 1550 3200
-Connection ~ 1550 3100
-Wire Wire Line
-	1550 3100 1650 3100
+	900  2950 1000 2950
 $Comp
 L keeb_power:GND #PWR02
 U 1 1 5F31E862
-P 1550 3200
-F 0 "#PWR02" H 1550 2950 50  0001 C CNN
-F 1 "GND" H 1555 3027 50  0000 C CNN
-F 2 "" H 1550 3200 50  0001 C CNN
-F 3 "" H 1550 3200 50  0001 C CNN
-	1    1550 3200
+P 900 3050
+F 0 "#PWR02" H 900 2800 50  0001 C CNN
+F 1 "GND" H 905 2877 50  0000 C CNN
+F 2 "" H 900 3050 50  0001 C CNN
+F 3 "" H 900 3050 50  0001 C CNN
+	1    900  3050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1550 2500 1550 2900
 Entry Wire Line
 	2550 1800 2650 1900
 Entry Wire Line
@@ -778,12 +769,12 @@ Entry Bus Bus
 $Comp
 L keeb_parts:CP1_Small C7
 U 1 1 5F3C380C
-P 1650 3000
-F 0 "C7" H 1741 3046 50  0000 L CNN
-F 1 "4.7n" H 1741 2955 50  0000 L CNN
-F 2 "keeb_parts:R_0603_1608Metric" H 1650 3000 50  0001 C CNN
-F 3 "~" H 1650 3000 50  0001 C CNN
-	1    1650 3000
+P 1000 2850
+F 0 "C7" H 1091 2896 50  0000 L CNN
+F 1 "4.7n" H 1091 2805 50  0000 L CNN
+F 2 "keeb_parts:C_0603_1608Metric" H 1000 2850 50  0001 C CNN
+F 3 "~" H 1000 2850 50  0001 C CNN
+	1    1000 2850
 	1    0    0    -1  
 $EndComp
 Text Label 2750 2750 0    50   ~ 0
@@ -821,8 +812,8 @@ L keeb_parts:C_Small C11
 U 1 1 5F3EF5E8
 P 5650 3650
 F 0 "C11" V 5421 3650 50  0000 C CNN
-F 1 "1u" V 5512 3650 50  0000 C CNN
-F 2 "keeb_parts:R_0603_1608Metric" H 5650 3650 50  0001 C CNN
+F 1 "4.7u" V 5512 3650 50  0000 C CNN
+F 2 "keeb_parts:C_0603_1608Metric" H 5650 3650 50  0001 C CNN
 F 3 "~" H 5650 3650 50  0001 C CNN
 	1    5650 3650
 	0    -1   1    0   
@@ -854,8 +845,8 @@ L keeb_parts:C_Small C12
 U 1 1 5F41416E
 P 6700 3850
 F 0 "C12" H 6792 3896 50  0000 L CNN
-F 1 "470n" H 6792 3805 50  0000 L CNN
-F 2 "keeb_parts:R_0603_1608Metric" H 6700 3850 50  0001 C CNN
+F 1 "1u" H 6792 3805 50  0000 L CNN
+F 2 "keeb_parts:C_0603_1608Metric" H 6700 3850 50  0001 C CNN
 F 3 "~" H 6700 3850 50  0001 C CNN
 	1    6700 3850
 	1    0    0    -1  
@@ -895,7 +886,7 @@ F 1 "10k" H 6309 3105 50  0000 L CNN
 F 2 "keeb_parts:R_0603_1608Metric" H 6250 3150 50  0001 C CNN
 F 3 "~" H 6250 3150 50  0001 C CNN
 	1    6250 3150
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	6250 3250 6250 3350
@@ -965,7 +956,7 @@ L keeb_chips:AO3400 Q2
 U 1 1 5F6077ED
 P 6150 3650
 F 0 "Q2" H 6356 3696 50  0000 L CNN
-F 1 "AO3400" H 6356 3605 50  0000 L CNN
+F 1 "2N7002" H 6356 3605 50  0000 L CNN
 F 2 "keeb_parts:SOT-23" H 6350 3575 50  0001 L CIN
 F 3 "https://datasheet.lcsc.com/szlcsc/Alpha-Omega-Semicon-AOS-AO3400A_C20917.pdf" H 6350 3500 50  0001 L CNN
 	1    6150 3650
@@ -976,7 +967,7 @@ L keeb_chips:AO3400 Q1
 U 1 1 5F6086A7
 P 6050 4950
 F 0 "Q1" H 6256 4996 50  0000 L CNN
-F 1 "AO3400" H 6256 4905 50  0000 L CNN
+F 1 "2N7002" H 6256 4905 50  0000 L CNN
 F 2 "keeb_parts:SOT-23" H 6250 4875 50  0001 L CIN
 F 3 "https://datasheet.lcsc.com/szlcsc/Alpha-Omega-Semicon-AOS-AO3400A_C20917.pdf" H 6250 4800 50  0001 L CNN
 	1    6050 4950
@@ -1258,20 +1249,14 @@ Wire Wire Line
 	7050 1500 6650 1500
 Entry Wire Line
 	6650 1500 6550 1600
-Text Label 6650 1500 0    50   ~ 0
-LED_2
 Wire Wire Line
 	7050 1850 6650 1850
 Entry Wire Line
 	6650 1850 6550 1950
-Text Label 6650 1850 0    50   ~ 0
-LED_3
 Wire Wire Line
 	7050 1150 6650 1150
 Entry Wire Line
 	6650 1150 6550 1250
-Text Label 6650 1150 0    50   ~ 0
-LED_1
 Wire Wire Line
 	7550 1150 7650 1150
 Wire Wire Line
@@ -1309,9 +1294,9 @@ Text Label 2750 4150 0    50   ~ 0
 B3
 Text Label 4850 5350 2    50   ~ 0
 A15
-Text Label 4850 5250 2    50   ~ 0
+Text Label 4800 5250 2    50   ~ 0
 SWDCLK
-Text Label 4850 5150 2    50   ~ 0
+Text Label 4800 5150 2    50   ~ 0
 SWDIO
 Text Label 2750 4650 0    50   ~ 0
 B8
@@ -1348,10 +1333,6 @@ Text Label 7300 2750 0    50   ~ 0
 B9
 Text Label 7300 2650 0    50   ~ 0
 SWDIO
-Text Label 4850 4750 2    50   ~ 0
-A9
-Text Label 7300 3950 0    50   ~ 0
-A9
 Text Label 2750 5050 0    50   ~ 0
 B12
 Text Label 2750 5150 0    50   ~ 0
@@ -1388,6 +1369,164 @@ Text Label 7300 3650 0    50   ~ 0
 B11
 Text Label 7300 3750 0    50   ~ 0
 B10
+Text Label 2750 4050 0    50   ~ 0
+B2
+Text Label 7300 3850 0    50   ~ 0
+B2
+Text Label 7300 3950 0    50   ~ 0
+B1
+Text Label 2750 3950 0    50   ~ 0
+B1
+Text Label 5050 1650 0    50   ~ 0
+D+
+Text Label 5050 1850 0    50   ~ 0
+D+
+Text Label 6450 1850 2    50   ~ 0
+D-
+Text Label 6450 1650 2    50   ~ 0
+D-
+Text Label 2750 3850 0    50   ~ 0
+B0
+Text Label 6650 1150 0    50   ~ 0
+B0
+Text Label 4850 3850 2    50   ~ 0
+A0
+Text Label 4850 3950 2    50   ~ 0
+A1
+Text Label 6650 1500 0    50   ~ 0
+A1
+Text Label 6650 1850 0    50   ~ 0
+A0
+Text Label 4850 4750 2    50   ~ 0
+A9
+Text Label 4850 4850 2    50   ~ 0
+A10
+Text Label 2800 3150 0    50   ~ 0
+F0
+Text Label 2750 3250 0    50   ~ 0
+F1
+Text Label 2800 3450 0    50   ~ 0
+C13
+Text Label 2800 3550 0    50   ~ 0
+C14
+Text Label 2800 3650 0    50   ~ 0
+C15
+Text Label 7300 3050 0    50   ~ 0
+A9
+Text Label 7300 2950 0    50   ~ 0
+A10
+Text Label 7300 2850 0    50   ~ 0
+F1
+$Comp
+L keeb_connectors:Conn_01x08 J1
+U 1 1 5F3E4C22
+P 1650 3500
+F 0 "J1" H 1568 2875 50  0000 C CNN
+F 1 "Conn_01x08" H 1568 2966 50  0000 C CNN
+F 2 "keeb_connectors:PinHeader_2x04_P2.54mm_Vertical" H 1650 3500 50  0001 C CNN
+F 3 "~" H 1650 3500 50  0001 C CNN
+	1    1650 3500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	800  2750 900  2750
+Wire Wire Line
+	900  2750 900  2650
+Connection ~ 900  2750
+Wire Wire Line
+	900  2750 1000 2750
+Entry Wire Line
+	2550 3300 2650 3400
+Entry Wire Line
+	2550 3400 2650 3500
+Entry Wire Line
+	2550 3500 2650 3600
+Entry Wire Line
+	2550 3600 2650 3700
+Entry Wire Line
+	2550 3700 2650 3800
+Entry Wire Line
+	2550 3800 2650 3900
+Text Label 2550 3800 2    50   ~ 0
+SPI_SCK
+Text Label 2550 3700 2    50   ~ 0
+SPI_MISO
+Text Label 2550 3600 2    50   ~ 0
+SPI_MOSI
+Text Label 2550 3500 2    50   ~ 0
+SPI_CS
+Text Label 2550 3400 2    50   ~ 0
+SPI_IRQ
+Text Label 2550 3300 2    50   ~ 0
+SPI_RES
+$Comp
+L keeb_power:GND #PWR0103
+U 1 1 5F4511C3
+P 2100 3100
+F 0 "#PWR0103" H 2100 2850 50  0001 C CNN
+F 1 "GND" H 2105 2927 50  0000 C CNN
+F 2 "" H 2100 3100 50  0001 C CNN
+F 3 "" H 2100 3100 50  0001 C CNN
+	1    2100 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L keeb_power:+3V3 #PWR0104
+U 1 1 5F46F2CD
+P 2000 2900
+F 0 "#PWR0104" H 2000 2750 50  0001 C CNN
+F 1 "+3V3" H 2015 3073 50  0000 C CNN
+F 2 "" H 2000 2900 50  0001 C CNN
+F 3 "" H 2000 2900 50  0001 C CNN
+	1    2000 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1850 3200 2100 3200
+Wire Wire Line
+	2000 2900 2000 3100
+Wire Wire Line
+	2000 3100 1850 3100
+Wire Wire Line
+	2100 3100 2100 3200
+Wire Wire Line
+	900  2650 1550 2650
+Wire Wire Line
+	1550 2500 1550 2650
+Wire Wire Line
+	1850 3300 2550 3300
+Wire Wire Line
+	1850 3400 2550 3400
+Wire Wire Line
+	1850 3500 2550 3500
+Wire Wire Line
+	1850 3600 2550 3600
+Wire Wire Line
+	1850 3700 2550 3700
+Wire Wire Line
+	1850 3800 2550 3800
+$Comp
+L keeb_parts:MountingHole H1
+U 1 1 5F3A532E
+P 8050 1200
+F 0 "H1" H 8150 1246 50  0000 L CNN
+F 1 "MountingHole" H 8150 1155 50  0000 L CNN
+F 2 "keeb_misc:mounting-circular" H 8050 1200 50  0001 C CNN
+F 3 "~" H 8050 1200 50  0001 C CNN
+	1    8050 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L keeb_parts:MountingHole H2
+U 1 1 5F3A5AB6
+P 8050 1550
+F 0 "H2" H 8150 1596 50  0000 L CNN
+F 1 "MountingHole" H 8150 1505 50  0000 L CNN
+F 2 "keeb_misc:mounting-circular" H 8050 1550 50  0001 C CNN
+F 3 "~" H 8050 1550 50  0001 C CNN
+	1    8050 1550
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	6550 950  6550 2350
 Wire Bus Line
@@ -1396,8 +1535,4 @@ Wire Bus Line
 	4950 950  4950 5550
 Wire Bus Line
 	2650 950  2650 5550
-Text Label 2750 4050 0    50   ~ 0
-B2
-Text Label 7300 3850 0    50   ~ 0
-B2
 $EndSCHEMATC

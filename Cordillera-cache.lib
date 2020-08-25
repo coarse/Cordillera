@@ -117,6 +117,37 @@ X IO4 6 500 -100 200 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# keeb_connectors_Conn_01x08
+#
+DEF keeb_connectors_Conn_01x08 J 0 40 Y N 1 F N
+F0 "J" 0 400 50 H V C CNN
+F1 "keeb_connectors_Conn_01x08" 0 -500 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -395 0 -405 1 1 6 N
+S -50 -295 0 -305 1 1 6 N
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 205 0 195 1 1 6 N
+S -50 305 0 295 1 1 6 N
+S -50 350 50 -450 1 1 10 f
+X Pin_1 1 -200 300 150 R 50 50 1 1 P
+X Pin_2 2 -200 200 150 R 50 50 1 1 P
+X Pin_3 3 -200 100 150 R 50 50 1 1 P
+X Pin_4 4 -200 0 150 R 50 50 1 1 P
+X Pin_5 5 -200 -100 150 R 50 50 1 1 P
+X Pin_6 6 -200 -200 150 R 50 50 1 1 P
+X Pin_7 7 -200 -300 150 R 50 50 1 1 P
+X Pin_8 8 -200 -400 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # keeb_connectors_HRO-TYPE-C-31-M-12
 #
 DEF keeb_connectors_HRO-TYPE-C-31-M-12 USB 0 40 Y Y 1 F N
@@ -324,6 +355,21 @@ X VDD RGB1 -100 200 100 D 25 25 3 1 W
 X DOUT RGB2 250 0 100 L 25 25 3 1 O
 X VSS RGB3 100 -200 100 U 25 25 3 1 W
 X DIN RGB4 -250 0 100 R 25 25 3 1 I
+ENDDRAW
+ENDDEF
+#
+# keeb_parts_MountingHole
+#
+DEF keeb_parts_MountingHole H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "keeb_parts_MountingHole" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 50 N
 ENDDRAW
 ENDDEF
 #
