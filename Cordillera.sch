@@ -1176,72 +1176,72 @@ $EndComp
 $Comp
 L keeb_lighting:LED_Small D38
 U 1 1 5F8AAE9D
-P 7450 1150
-F 0 "D38" H 7450 1385 50  0000 C CNN
-F 1 "LED 1" H 7450 1294 50  0000 C CNN
-F 2 "keeb_lighting:LED_D3.0mm" V 7450 1150 50  0001 C CNN
-F 3 "~" V 7450 1150 50  0001 C CNN
-	1    7450 1150
-	-1   0    0    -1  
+P 7150 1150
+F 0 "D38" H 7150 1385 50  0000 C CNN
+F 1 "LED 1" H 7150 1294 50  0000 C CNN
+F 2 "keeb_lighting:LED_D3.0mm" V 7150 1150 50  0001 C CNN
+F 3 "~" V 7150 1150 50  0001 C CNN
+	1    7150 1150
+	1    0    0    -1  
 $EndComp
 $Comp
 L keeb_lighting:LED_Small D39
 U 1 1 5F8AC84D
-P 7450 1500
-F 0 "D39" H 7450 1735 50  0000 C CNN
-F 1 "LED 2" H 7450 1644 50  0000 C CNN
-F 2 "keeb_lighting:LED_D3.0mm" V 7450 1500 50  0001 C CNN
-F 3 "~" V 7450 1500 50  0001 C CNN
-	1    7450 1500
-	-1   0    0    -1  
+P 7150 1500
+F 0 "D39" H 7150 1735 50  0000 C CNN
+F 1 "LED 2" H 7150 1644 50  0000 C CNN
+F 2 "keeb_lighting:LED_D3.0mm" V 7150 1500 50  0001 C CNN
+F 3 "~" V 7150 1500 50  0001 C CNN
+	1    7150 1500
+	1    0    0    -1  
 $EndComp
 $Comp
 L keeb_lighting:LED_Small D40
 U 1 1 5F8ACDD5
-P 7450 1850
-F 0 "D40" H 7450 2085 50  0000 C CNN
-F 1 "LED 3" H 7450 1994 50  0000 C CNN
-F 2 "keeb_lighting:LED_D3.0mm" V 7450 1850 50  0001 C CNN
-F 3 "~" V 7450 1850 50  0001 C CNN
-	1    7450 1850
-	-1   0    0    -1  
+P 7150 1850
+F 0 "D40" H 7150 2085 50  0000 C CNN
+F 1 "LED 3" H 7150 1994 50  0000 C CNN
+F 2 "keeb_lighting:LED_D3.0mm" V 7150 1850 50  0001 C CNN
+F 3 "~" V 7150 1850 50  0001 C CNN
+	1    7150 1850
+	1    0    0    -1  
 $EndComp
 $Comp
 L keeb_parts:R_Small R75
 U 1 1 5F8B84D2
-P 7150 1150
-F 0 "R75" V 6954 1150 50  0000 C CNN
-F 1 "470" V 7045 1150 50  0000 C CNN
-F 2 "keeb_parts:R_0603_1608Metric" H 7150 1150 50  0001 C CNN
-F 3 "~" H 7150 1150 50  0001 C CNN
-	1    7150 1150
-	0    1    1    0   
+P 7450 1150
+F 0 "R75" V 7254 1150 50  0000 C CNN
+F 1 "470" V 7345 1150 50  0000 C CNN
+F 2 "keeb_parts:R_0603_1608Metric" H 7450 1150 50  0001 C CNN
+F 3 "~" H 7450 1150 50  0001 C CNN
+	1    7450 1150
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	7350 1150 7250 1150
 $Comp
 L keeb_parts:R_Small R76
 U 1 1 5F8C72A6
-P 7150 1500
-F 0 "R76" V 6954 1500 50  0000 C CNN
-F 1 "470" V 7045 1500 50  0000 C CNN
-F 2 "keeb_parts:R_0603_1608Metric" H 7150 1500 50  0001 C CNN
-F 3 "~" H 7150 1500 50  0001 C CNN
-	1    7150 1500
-	0    1    1    0   
+P 7450 1500
+F 0 "R76" V 7254 1500 50  0000 C CNN
+F 1 "470" V 7345 1500 50  0000 C CNN
+F 2 "keeb_parts:R_0603_1608Metric" H 7450 1500 50  0001 C CNN
+F 3 "~" H 7450 1500 50  0001 C CNN
+	1    7450 1500
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	7350 1500 7250 1500
 $Comp
 L keeb_parts:R_Small R77
 U 1 1 5F8D1CE0
-P 7150 1850
-F 0 "R77" V 6954 1850 50  0000 C CNN
-F 1 "470" V 7045 1850 50  0000 C CNN
-F 2 "keeb_parts:R_0603_1608Metric" H 7150 1850 50  0001 C CNN
-F 3 "~" H 7150 1850 50  0001 C CNN
-	1    7150 1850
-	0    1    1    0   
+P 7450 1850
+F 0 "R77" V 7254 1850 50  0000 C CNN
+F 1 "470" V 7345 1850 50  0000 C CNN
+F 2 "keeb_parts:R_0603_1608Metric" H 7450 1850 50  0001 C CNN
+F 3 "~" H 7450 1850 50  0001 C CNN
+	1    7450 1850
+	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	7350 1850 7250 1850
@@ -1268,20 +1268,6 @@ Wire Wire Line
 Connection ~ 7650 1500
 Wire Wire Line
 	7650 1500 7650 1850
-Wire Wire Line
-	7650 1850 7650 1950
-Connection ~ 7650 1850
-$Comp
-L keeb_power:GND #PWR0102
-U 1 1 5F93905E
-P 7650 1950
-F 0 "#PWR0102" H 7650 1700 50  0001 C CNN
-F 1 "GND" H 7655 1777 50  0000 C CNN
-F 2 "" H 7650 1950 50  0001 C CNN
-F 3 "" H 7650 1950 50  0001 C CNN
-	1    7650 1950
-	1    0    0    -1  
-$EndComp
 Text Label 2750 4550 0    50   ~ 0
 B7
 Text Label 2750 4450 0    50   ~ 0
@@ -1506,27 +1492,19 @@ Wire Wire Line
 Wire Wire Line
 	1850 3800 2550 3800
 $Comp
-L keeb_parts:MountingHole H1
-U 1 1 5F3A532E
-P 8050 1200
-F 0 "H1" H 8150 1246 50  0000 L CNN
-F 1 "MountingHole" H 8150 1155 50  0000 L CNN
-F 2 "keeb_misc:mounting-circular" H 8050 1200 50  0001 C CNN
-F 3 "~" H 8050 1200 50  0001 C CNN
-	1    8050 1200
+L keeb_power:+5V #PWR0102
+U 1 1 5F48FA29
+P 7650 1050
+F 0 "#PWR0102" H 7650 900 50  0001 C CNN
+F 1 "+5V" H 7665 1223 50  0000 C CNN
+F 2 "" H 7650 1050 50  0001 C CNN
+F 3 "" H 7650 1050 50  0001 C CNN
+	1    7650 1050
 	1    0    0    -1  
 $EndComp
-$Comp
-L keeb_parts:MountingHole H2
-U 1 1 5F3A5AB6
-P 8050 1550
-F 0 "H2" H 8150 1596 50  0000 L CNN
-F 1 "MountingHole" H 8150 1505 50  0000 L CNN
-F 2 "keeb_misc:mounting-circular" H 8050 1550 50  0001 C CNN
-F 3 "~" H 8050 1550 50  0001 C CNN
-	1    8050 1550
-	1    0    0    -1  
-$EndComp
+Wire Wire Line
+	7650 1050 7650 1150
+Connection ~ 7650 1150
 Wire Bus Line
 	6550 950  6550 2350
 Wire Bus Line
